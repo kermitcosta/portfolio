@@ -12,22 +12,60 @@
     <div id="navbar">
       <a href="index.html"><p class="logo">Kermit Costa</p></a>
       <img src="" alt="" />
-      <button class="btn-menu" onclick="showMenu()">
-        <img src="/assets/img/list.svg" alt="menu icon" />
-      </button>
+      <div class="btn-menu-wrapper" onclick="showMenu()">
+        <div class="btn-menu"></div>
+        <div class="btn-menu"></div>
+        <div class="btn-menu"></div>
+      </div>
       <nav class="menu">
-        <a class="btn-close" href="#" onclick="closeMenu()">x</a>
+        <a class="btn-close" onclick="closeMenu()">x</a>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">Sobre mim</a></li>
-          <li><a href="#qualification">Formação</a></li>
-          <li><a href="#experience">Atuação profissional</a></li>
-          <li><a href="#portfolio">Portfólio</a></li>
-          <li><a href="#contact">Contato</a></li>
+          <li><a class="home active" href="#home">Home</a></li>
+          <li><a class="about" href="#about">Sobre mim</a></li>
+          <li><a class="qualification" href="#qualification">Formação</a></li>
+          <li>
+            <a class="experience" href="#experience">Atuação profissional</a>
+          </li>
+          <li><a class="portfolio" href="#portfolio">Portfólio</a></li>
+          <li><a class="contact" href="#contact">Contato</a></li>
         </ul>
       </nav>
     </div>
-    <!-- Conteúdo -->
+    <!-- Content -->
+    <main>
+      <section id="home">
+        <div>
+          <h2>Início</h2>
+        </div>
+      </section>
+      <section id="about">
+        <div>
+          <h2>Sobre mim</h2>
+        </div>
+      </section>
+      <section id="qualification">
+        <div>
+          <h2>Formação</h2>
+        </div>
+      </section>
+      <section id="experience">
+        <div>
+          <h2>Atuação Profissional</h2>
+        </div>
+      </section>
+      <section id="portfolio">
+        <div>
+          <h2>Portfólio</h2>
+        </div>
+      </section>
+      <section id="contact">
+        <div>
+          <h2>Contato</h2>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer></footer>
     <script src="./assets/js/index.js"></script>
   </body>
 </html>

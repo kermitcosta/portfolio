@@ -16,14 +16,19 @@ img {
   max-width: 100%;
 }
 
-/* == Header == */
+:target { 
+  scroll-margin-top: 3.8em;
+} 
+
+/* == Menu == */
+
 #navbar {
   position: sticky;
   top: 0;
   height: 40px;
   width: 100%;
   padding: 10px 0px;
-  background-color: #6b6868;
+  background-color: rgb(39, 39, 39);
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -36,18 +41,29 @@ img {
   width: max-content;
   float: left;
   font-size: 1.5em;
-  color: black;
+  color: white;
+}
+
+.logo:hover {
+  color: lightgray;
+  border-top: rgba(78, 120, 197,0.6) 1px solid;
+  border-bottom: rgba(78, 120, 197,0.6) 1px solid;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.btn-menu-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .btn-menu { 
+  width: 30px;
+  height: 4px;
   border: none;
-  background:none;
+  background:white;
   float: right;
-}
-
-.btn-menu img {
-  height: 40px;
-  width: 40px;
 }
 
 .btn-menu:hover {
@@ -55,6 +71,7 @@ img {
 }
 
 .btn-close {
+  cursor: pointer;
   font-size: 3em;
   float: right;
   margin-right: 15%;
@@ -87,15 +104,38 @@ img {
 }
 
 .menu li a:hover {
-  text-decoration: underline 1px orange ;
+  color: lightgrey ;
+}
+
+.menu li a.active {
+  border-bottom: rgba(78, 120, 197,0.6) 1px solid;
+  border-top: rgba(78, 120, 197,0.6) 1px solid;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: rgba(177, 174, 174, 0.938);
+  font-size: 2.2em;
+  transition: ease-out 0.3s;
+}
+
+/* == Content == */
+section {
+  height: 700px;
+  border: 1px solid black;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+}
+
+footer {
+  height: 60px;
 }
 
 /* == Responsividade == */
 /* Tablets */
 @media screen and (min-width: 768px) {
-  .btn-menu img {
-    height: 50px;
-    width: 50px;
+  .btn-menu {
+    width: 35px;
+    height: 5px;
   }
 
   .logo {
@@ -131,15 +171,14 @@ img {
     float: left;
   }
 
-  .menu li a:hover {
-    color:orange ;
-    text-decoration: none;
-  }
-
   .menu li a {
-    color: black;
+    color: white;
     font-size: 1.1em;
     padding: 15px;
+  }
+
+  .menu li a.active {
+    font-size: 1.2em;
   }
 
 }
