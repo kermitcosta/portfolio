@@ -1,16 +1,16 @@
 // Menu //
 
-//Função para mostrar o menu na versão mobile
+//Show mobile version menu
 function showMenu() {
   document.querySelector('.menu').style.display = 'block'
 }
 
-//Função para fechar o menu na versão mobile
+//Hide mobile version menu
 function closeMenu() {
   document.querySelector('.menu').style.display = 'none'
 }
 
-//Ativar menu quando muda a seção
+//Activate menu based on section
 const sections = document.querySelectorAll('section')
 const navLi = document.querySelectorAll('nav ul li a')
 

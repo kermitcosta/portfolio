@@ -4,15 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png" />
     <link rel="stylesheet" href="./assets/styles/index.css" />
     <title>Kermit Costa - Portfólio</title>
   </head>
   <body>
     <!-- Menu -->
-    <div id="navbar">
-      <a href="index.html"
-        ><p class="logo tracking-in-expand">Kermit Costa</p></a
-      >
+    <header class="navbar">
+      <a href="index.html"><p class="logo">KC</p></a>
       <div class="btn-menu-wrapper" onclick="showMenu()">
         <div class="btn-menu"></div>
         <div class="btn-menu"></div>
@@ -20,7 +19,7 @@
       </div>
       <nav class="menu">
         <a class="btn-close" onclick="closeMenu()">x</a>
-        <ul class="text-focus-in">
+        <ul>
           <li><a class="home active" href="#home">HOME</a></li>
           <li><a class="about" href="#about">SOBRE MIM</a></li>
           <li><a class="qualification" href="#qualification">FORMAÇÃO</a></li>
@@ -31,13 +30,25 @@
           <li><a class="contact" href="#contact">CONTATO</a></li>
         </ul>
       </nav>
-    </div>
+    </header>
     <!-- Content -->
-    <main>
-      <section id="home">
-        <div>
-          <h2>Início</h2>
+    <main class="content">
+      <section class="home-content" id="home">
+        <div class="home-div">
+          <h2 class="home-title slide-in-top">Seja Bem-vindo(a)!</h2>
+          <p class="home-paragraph slide-in-left">
+            Olá, me chamo <span class="highlight-text">Kermit.</span>
+            <br />
+            Aqui você vai encontrar um pouco sobre minha trajetória de estudos e
+            projetos no mundo da
+            <span class="highlight-text">programação.</span>
+          </p>
         </div>
+        <img
+          class="home-img bounce-top"
+          src="./assets/img/development-4536630.svg"
+          alt="programmer image"
+        />
       </section>
       <section id="about">
         <div>
@@ -67,18 +78,18 @@
     </main>
     <!-- Footer -->
     <footer>
-      <div id="social-links-wrapper">
+      <div class="social-links-wrapper">
         <a href="https://github.com/kermitcosta" target="_blank"
-          ><img src="./assets/img/github.png" alt="github icon"
+          ><img src="./assets/img/github.svg" alt="github icon"
         /></a>
         <a href="https://www.linkedin.com/in/kermit-costa/" target="_blank"
-          ><img src="./assets/img/instagram.png" alt="linkedin icon"
+          ><img src="./assets/img/linkedin.svg" alt="linkedin icon"
         /></a>
         <a href="https://www.instagram.com/kermitc" target="_blank"
-          ><img src="./assets/img/linkedin.png" alt="instagram icon"
+          ><img src="./assets/img/instagram.svg" alt="instagram icon"
         /></a>
         <a href="https://www.twitter.com/costakermit" target="_blank"
-          ><img src="./assets/img/twitter.png" alt="twitter icon"
+          ><img src="./assets/img/twitter.svg" alt="twitter icon"
         /></a>
       </div>
       <p>Desenvolvido por Kermit Costa</p>
