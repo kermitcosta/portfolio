@@ -1,0 +1,33 @@
+/* == Footer == */
+footer {
+  position: sticky;
+  bottom: 0;
+  height: 90px;
+  width: 100%;
+  background-color: #141724;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color:#CDD2E7;
+  font-size: 0.9em;
+}
+
+footer p {
+  border-top: solid 0.5px #919ACA;
+  padding: 5px 0px;
+  font-weight: 900;
+}
+
+.social-links-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+.social-links-wrapper img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 30px;
+}

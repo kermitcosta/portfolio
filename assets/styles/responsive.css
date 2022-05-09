@@ -1,0 +1,138 @@
+/* == Responsive == */
+/* Tablets */
+@media screen and (min-width: 768px) {
+  
+  .logo {
+    font-size: 2em;
+  }
+  
+  .btn-menu {
+    width: 35px;
+    height: 5px;
+  }
+ 
+  .menu li a {
+    font-size: 1.7em;
+  }
+
+  .menu li a.active {
+    font-size: 2em;
+  }
+
+  .home-title {
+    font-size: 3em;
+  }
+
+  .home-paragraph {
+    font-size: 1.5em;
+  }
+
+  .home-img {
+    width: 300px;
+    height: 300px;
+  }
+
+  footer {
+    font-size: 1em;
+  }
+}
+
+/* Notebooks */
+@media screen and (min-width: 1024px) {
+  .navbar {
+    gap: 0px;
+  }
+  
+  .btn-menu, .btn-close {
+    display: none;
+  }
+
+  .menu {
+    background-color: transparent;
+    width: auto;
+    height: 50px;
+    line-height: 50px;
+    float: right;
+    display: block !important;
+    position: static;
+    visibility: visible;
+    transition: none;
+    opacity: 1;
+  }
+
+  .menu li {
+    padding: 0;
+    float: left;
+  }
+
+  .menu li a {
+    color: #CDD2E7;
+    font-size: 1em;
+    padding: 15px 10px;
+  }
+
+  .menu li a.active {
+    font-size: 1.1em;
+    color: #141724
+  }
+
+  .menu li a:hover {
+    background-color: #CDD2E7;
+    color: #141724 ;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: ease-out 0.3s;
+  }
+
+  .home-paragraph {
+    padding: 0;
+  }
+
+  .home-content {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .home-div{
+    width: 600px;
+  }
+
+  .home-title {
+    font-size: 3.5em;
+  }
+
+  .home-paragraph {
+    font-size: 1.5em;
+  }
+
+  .home-img {
+    width: 300px;
+    height: 300px;
+  }
+
+  footer {
+    font-size: 1em;
+  }
+
+}
+
+/* 1440p */
+@media screen and (min-width: 1440px) {
+  .home-div{
+    width: 800px;
+  }
+  
+  .home-title {
+    font-size: 5em;
+  }
+
+  .home-paragraph {
+    font-size: 2em;
+  }
+
+  .home-img {
+    width: 400px;
+    height: 400px;
+  }
+}
