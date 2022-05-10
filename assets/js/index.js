@@ -19,7 +19,7 @@ window.addEventListener('scroll', () => {
   sections.forEach(section => {
     const sectionTop = section.offsetTop
     const sectionHeight = section.clientHeight
-    if (scrollY >= sectionTop - sectionHeight) {
+    if (scrollY >= sectionTop - (sectionHeight - 40)) {
       current = section.getAttribute('id')
     }
   })
@@ -30,3 +30,16 @@ window.addEventListener('scroll', () => {
     }
   })
 })
+
+//Get GitHub Profile Picture
+function getGitHubProfilePicture() {
+  const url = 'https://api.github.com/users/kermitcosta'
+
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      userPicture.src = data.avatar_url
+    })
+}
+
+getGitHubProfilePicture()

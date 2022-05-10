@@ -4,12 +4,12 @@
 
 /* == Reset & Global configs. == */
 * {
-  border: none; 
+  border: none;
   font-size: 100%;
   font-family: 'Architects Daughter', cursive;
-  margin: 0; 
+  margin: 0;
   outline: none;
-  padding: 0; 
+  padding: 0;
 }
 
 a {
@@ -18,41 +18,51 @@ a {
 
 body {
   position: relative;
-  background-color: #01303f;
+  min-height: 100%;
+}
+
+html {
+  height: 100%;
 }
 
 h2 {
   font-size: 2em;
+  font-weight: 600;
 }
 
 img {
   max-width: 100%;
 }
 
+p {
+  font-size: 1em;
+}
+
 section {
-  height: calc(100vh - 10rem);
+  padding: 30px 0px;
 }
 
 ul {
   list-style: none;
 }
 
-:target { 
-  scroll-margin-top: 5em;
-} 
+:target {
+  scroll-margin-top: 6em;
+}
 
 /* == Main Content == */
 
 /* == Home == */
 .home-content {
-  background-color: #CDD2E7;
+  background-color: #cdd2e7;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: center;
   justify-content: space-around;
-  text-align: center;
+  text-align: justify;
+  gap: 90px;
 }
 
 .home-div {
@@ -63,18 +73,19 @@ ul {
 }
 
 .home-paragraph {
-  font-size: 1.2em;
-  padding: 0px 25px;
-  color: #919ACA;
+  padding: 0px 30px;
+  color: #2e3760;
 }
 
 .home-highlight-text {
-  color: #4F5DA5;
+  color: #141724;
+  font-weight: 600;
 }
 
 .home-title {
+  margin: 0 auto;
   border: none;
-  color: #919ACA;
+  color: #141724;
 }
 
 .home-img {
@@ -83,10 +94,58 @@ ul {
 }
 
 /* == About Me == */
-.about-content{
-  background-color: #4F5DA5;
+.about-content {
+  background-color: #4f5da5;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
 }
 
 .about-title {
-  color: #141724;
+  color: #cdd2e7;
+}
+
+.about-div {
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.about-highlight-text {
+  color: #cdd2e7;
+  font-weight: 600;
+}
+
+.about-paragraph {
+  color: #919aca;
+}
+
+.about-img {
+  display: none;
+}
+
+/* == Qualification == */
+.qualification-content {
+  background-color: #2e3760;
+  padding: 0px 30px;
+}
+
+.qualification-title {
+  padding-top: 30px;
+  color: #919aca;
+}
+
+.qualification-paragraph {
+  color: #cdd2e7;
+}
+
+.qualification-div {
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
