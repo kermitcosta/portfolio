@@ -23,6 +23,7 @@ body {
 
 html {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 h2 {
@@ -45,7 +46,7 @@ p {
 }
 
 section {
-  padding: 30px 0px;
+  padding: 0px 30px;
 }
 
 ul {
@@ -61,7 +62,6 @@ ul {
 /* == Home == */
 .home-content {
   background-color: #cdd2e7;
-  padding: 0px 30px;
 }
 
 .home-div {
@@ -84,6 +84,7 @@ ul {
 }
 
 .home-title {
+  text-align: center;
   color: #141724;
 }
 
@@ -96,7 +97,6 @@ ul {
 /* == About Me == */
 .about-content {
   background-color: #4f5da5;
-  padding: 0px 30px;
 }
 
 .about-title {
@@ -142,7 +142,6 @@ h3 {
 
 .qualification-content {
   background-color: #2e3760;
-  padding: 0px 30px;
 }
 
 .qualification-title {
@@ -164,7 +163,6 @@ h3 {
 /* == Professional Experience == */
 .experience-content {
   background-color: #cdd2e7;
-  padding: 0px 30px;
 }
 
 .experience-title {

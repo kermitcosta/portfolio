@@ -12,38 +12,38 @@
   align-content: center;
   align-items: center;
   justify-content: space-around;
-  gap: 100px;
+  gap: 150px;
   z-index: 1;
 }
 
 .logo {
-  background-color:#CDD2E7;
+  background-color: #cdd2e7;
   font-size: 1.6em;
   font-weight: 900;
   color: #141724;
   padding: 3px;
-  border: #CDD2E7 solid 1px;
+  border: #cdd2e7 solid 1px;
   border-radius: 20%;
   text-align: center;
 }
 
 .logo:hover {
-  background-color:#141724;
-  color: #CDD2E7; 
+  background-color: #141724;
+  color: #cdd2e7;
   border: #141724 solid 1px;
 }
 
-.btn-menu-wrapper{
+.btn-menu-wrapper {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-.btn-menu { 
+.btn-menu {
   width: 30px;
   height: 4px;
   border: none;
-  background:#CDD2E7;
+  background: #cdd2e7;
 }
 
 .btn-menu:hover {
@@ -55,14 +55,14 @@
   font-size: 3em;
   float: right;
   margin-right: 15%;
-  color: #CDD2E7;
+  color: #cdd2e7;
 }
 
 .menu {
   width: 100%;
   height: 100%;
   position: fixed;
-  background-color: rgba(20, 23, 36,0.95);
+  background-color: rgba(20, 23, 36, 0.95);
   top: 0;
   left: 0;
   display: none;
@@ -71,7 +71,7 @@
 .menu ul {
   width: 100%;
   float: left;
-  text-align:center
+  text-align: center;
 }
 
 .menu li {
@@ -81,14 +81,14 @@
 .menu li a {
   font-weight: 900;
   font-size: 1.4em;
-  color: #CDD2E7;
+  color: #cdd2e7;
 }
 
 .menu li a.active {
-  background-color: #CDD2E7;
+  background-color: #cdd2e7;
   padding: 5px;
   border-radius: 5px;
-  color: #2E3760;
+  color: #2e3760;
   font-size: 1.4em;
   transition: ease-out 0.3s;
 }

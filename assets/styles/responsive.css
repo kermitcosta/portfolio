@@ -5,6 +5,10 @@
     font-size: 2.2em;
   }
 
+  .navbar {
+    gap: 500px;
+  }
+
   .logo {
     font-size: 2em;
   }
@@ -87,9 +91,17 @@
     font-size: 2.5em;
   }
 
-  p,
   h3 {
+    font-size: 1.5em;
+  }
+
+  p,
+  h4 {
     font-size: 1.1em;
+  }
+
+  section {
+    padding: 0px 60px;
   }
 
   .navbar {
@@ -139,26 +151,14 @@
     transition: ease-out 0.3s;
   }
 
-  .home-content {
-    padding: 0px 100px;
-  }
-
   .home-img {
     width: 300px;
     height: 300px;
   }
 
-  .about-content {
-    padding: 0px 100px;
-  }
-
   .about-img {
     width: 200px;
     height: 200px;
-  }
-
-  .qualification-content {
-    padding: 0px 100px;
   }
 
   .qualification-div {
@@ -167,10 +167,6 @@
 
   .qualification-paragraph {
     width: 350px;
-  }
-
-  .experience-content {
-    padding: 0px 100px;
   }
 
   .experience-wrapper {
@@ -193,15 +189,7 @@
     font-size: 1.2em;
   }
 
-  .home-content {
-    padding: 0px 200px;
-  }
-
-  .about-content {
-    padding: 0px 200px;
-  }
-
-  .qualification-content {
+  section {
     padding: 0px 200px;
   }
 
