@@ -26,8 +26,14 @@ html {
 }
 
 h2 {
+  padding-top: 15px;
   font-size: 2em;
   font-weight: 600;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 1.3em;
 }
 
 img {
@@ -55,25 +61,20 @@ ul {
 /* == Home == */
 .home-content {
   background-color: #cdd2e7;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  justify-content: space-around;
-  text-align: justify;
-  gap: 90px;
+  padding: 0px 30px;
 }
 
 .home-div {
-  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 30px;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  justify-content: space-around;
+  text-align: justify;
+  gap: 60px;
 }
 
 .home-paragraph {
-  padding: 0px 30px;
   color: #2e3760;
 }
 
@@ -83,12 +84,11 @@ ul {
 }
 
 .home-title {
-  margin: 0 auto;
-  border: none;
   color: #141724;
 }
 
 .home-img {
+  margin: 0 auto;
   width: 200px;
   height: 200px;
 }
@@ -96,9 +96,7 @@ ul {
 /* == About Me == */
 .about-content {
   background-color: #4f5da5;
-  text-align: justify;
-  display: flex;
-  flex-direction: column;
+  padding: 0px 30px;
 }
 
 .about-title {
@@ -106,11 +104,12 @@ ul {
 }
 
 .about-div {
-  padding: 0px 30px;
+  margin: 0 auto;
+  padding-bottom: 30px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin: 0 auto;
+  text-align: justify;
+  gap: 30px;
 }
 
 .about-highlight-text {
@@ -127,13 +126,26 @@ ul {
 }
 
 /* == Qualification == */
+h3 {
+  color: #141724;
+  text-decoration: underline;
+  padding-bottom: 15px;
+}
+
+.qualification-content a {
+  color: #919aca;
+}
+
+.qualification-content a:hover {
+  color: #141724;
+}
+
 .qualification-content {
   background-color: #2e3760;
   padding: 0px 30px;
 }
 
 .qualification-title {
-  padding-top: 30px;
   color: #919aca;
 }
 
@@ -143,9 +155,33 @@ ul {
 
 .qualification-div {
   margin: 0 auto;
-  padding-top: 10px;
   padding-bottom: 30px;
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+
+/* == Professional Experience == */
+.experience-content {
+  background-color: #cdd2e7;
+  padding: 0px 30px;
+}
+
+.experience-title {
+  color: #141724;
+}
+
+.experience-div {
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-div ul {
+  padding-top: 5px;
+  text-indent: 20px;
+  list-style: square;
+  list-style-position: inside;
 }
