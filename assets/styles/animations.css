@@ -99,3 +99,14 @@
     opacity: 1;
   }
 }
+
+.reveal {
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active-reveal {
+  transform: translateY(0px);
+  opacity: 1;
+}
