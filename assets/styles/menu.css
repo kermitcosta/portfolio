@@ -3,7 +3,7 @@
 .navbar {
   position: sticky;
   top: 0;
-  height: 60px;
+  height: 80px;
   width: 100%;
   padding: 10px 0px;
   background-color: #141724;
@@ -21,10 +21,11 @@
   font-size: 1.6em;
   font-weight: 900;
   color: #141724;
-  padding: 3px;
+  padding: 2px;
   border: #cdd2e7 solid 1px;
   border-radius: 20%;
   text-align: center;
+  margin: 0;
 }
 
 .logo:hover {
@@ -36,6 +37,7 @@
 .btn-menu-wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 5px;
 }
 
@@ -50,7 +52,7 @@
   cursor: pointer;
 }
 
-.btn-close {
+.btn-close-menu {
   cursor: pointer;
   font-size: 3em;
   float: right;
@@ -72,15 +74,16 @@
   width: 100%;
   float: left;
   text-align: center;
+  padding: 0px;
 }
 
 .menu li {
-  padding: 2%;
+  padding: 10px;
 }
 
 .menu li a {
-  font-weight: 900;
-  font-size: 1.4em;
+  font-size: 1.3em;
+  font-weight: 600;
   color: #cdd2e7;
 }
 

@@ -6,7 +6,7 @@
 * {
   border: none;
   font-size: 100%;
-  font-family: 'Mali', cursive, sans-serif;
+  font-family: 'Mali', cursive;
   margin: 0;
   outline: none;
   padding: 0;
@@ -33,8 +33,12 @@ h2 {
 }
 
 h3 {
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-weight: 600;
+}
+
+h4 {
+  font-size: 1.1em;
 }
 
 img {
@@ -169,6 +173,10 @@ h3 {
   color: #141724;
 }
 
+.experience-paragraph {
+  margin: 0;
+}
+
 .experience-div {
   padding-bottom: 30px;
   display: flex;
@@ -177,8 +185,11 @@ h3 {
 }
 
 .experience-div ul {
-  padding-top: 5px;
-  text-indent: 10px;
   list-style: disc;
-  list-style-position: inside;
+}
+
+/* == Contact == */
+.contact-content {
+  background-color: #4f5da5;
+  color: #141724;
 }

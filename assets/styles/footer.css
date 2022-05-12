@@ -8,12 +8,12 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color:#CDD2E7;
+  color: #cdd2e7;
   font-size: 0.9em;
 }
 
 footer p {
-  border-top: solid 0.5px #919ACA;
+  border-top: solid 0.5px #919aca;
   padding: 5px 0px;
   font-weight: 900;
 }
