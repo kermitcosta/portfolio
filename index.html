@@ -40,8 +40,8 @@
           <li>
             <a class="experience" href="#experience">ATUAÇÃO PROFISSIONAL</a>
           </li>
-          <li><a class="portfolio" href="#portfolio">PORTFÓLIO</a></li>
           <li><a class="contact" href="#contact">CONTATO</a></li>
+          <li><a class="portfolio" href="#portfolio">PORTFÓLIO</a></li>
         </ul>
       </nav>
     </header>
@@ -200,52 +200,95 @@
         </div>
       </section>
 
+      <!-- Content-Contact -->
+      <section class="contact-content" id="contact">
+        <h2>Contato</h2>
+        <form class="reveal">
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingInput"
+              placeholder="Nome"
+              required
+            />
+            <label for="floatingInput">Nome</label>
+            <div id="emailHelp" class="form-text"></div>
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInput"
+              placeholder="nome@example.com"
+              required
+            />
+            <label for="floatingInput">Email</label>
+          </div>
+          <div class="form-floating">
+            <textarea
+              class="form-control"
+              placeholder="Leave a comment here"
+              id="floatingTextarea"
+              required
+              style="height: 100px"
+            ></textarea>
+            <label for="floatingTextarea">Mensagem</label>
+          </div>
+          <br />
+          <button type="button" class="btn btn-primary">Enviar</button>
+        </form>
+        <br />
+        <div class="contact-div">
+          <div>
+            <div>
+              <h4>Contato Pessoal</h4>
+              <img src="./assets/img/envelope.svg" alt="envelope icon" />
+              <a href="mailto:kermitcst@gmail.com">kermitcst@gmail.com</a>
+            </div>
+            <div>
+              <img src="./assets/img/whatsapp.svg" alt="whatsapp icon" />
+              <a href="tel:+55(83) 99672-0111">(83) 99672-0111</a>
+            </div>
+          </div>
+          <br />
+          <div>
+            <div>
+              <h4>Redes Sociais</h4>
+              <img src="./assets/img/linkedin.svg" alt="envelope icon" />
+              <a
+                href="https://www.linkedin.com/in/kermit-costa/"
+                target="_blank"
+                >Linkedin</a
+              >
+            </div>
+            <div>
+              <img src="./assets/img/github.svg" alt="whatsapp icon" />
+              <a href="https://github.com/kermitcosta" target="_blank"
+                >Github</a
+              >
+            </div>
+            <div>
+              <img src="./assets/img/instagram.svg" alt="whatsapp icon" />
+              <a href="https://www.instagram.com/kermitc" target="_blank"
+                >Instagram</a
+              >
+            </div>
+            <div>
+              <img src="./assets/img/twitter.svg" alt="whatsapp icon" />
+              <a href="https://www.twitter.com/costakermit" target="_blank"
+                >Twitter</a
+              >
+            </div>
+          </div>
+        </div>
+        <br />
+      </section>
+
       <!-- Content-Portfolio -->
       <section id="portfolio">
         <div>
           <h2>Portfólio</h2>
-        </div>
-      </section>
-
-      <!-- Content-Contact -->
-      <section class="contact-content" id="contact">
-        <h2>Contato</h2>
-        <div class="contact-div">
-          <form>
-            <div class="form-floating mb-3">
-              <input
-                type="text"
-                class="form-control"
-                id="floatingInput"
-                placeholder="Nome"
-                required
-              />
-              <label for="floatingInput">Nome</label>
-              <div id="emailHelp" class="form-text"></div>
-            </div>
-            <div class="form-floating mb-3">
-              <input
-                type="email"
-                class="form-control"
-                id="floatingInput"
-                placeholder="nome@example.com"
-                required
-              />
-              <label for="floatingInput">Email</label>
-            </div>
-            <div class="form-floating">
-              <textarea
-                class="form-control"
-                placeholder="Leave a comment here"
-                id="floatingTextarea"
-                required
-                style="height: 100px"
-              ></textarea>
-              <label for="floatingTextarea">Mensagem</label>
-            </div>
-            <br />
-          </form>
-          <button class="btn btn-primary">Enviar</button>
         </div>
       </section>
     </main>

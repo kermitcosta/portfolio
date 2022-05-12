@@ -73,6 +73,11 @@
     width: 300px;
   }
 
+  .contact-div {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
   footer {
     font-size: 1em;
   }

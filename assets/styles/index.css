@@ -190,6 +190,19 @@ h3 {
 
 /* == Contact == */
 .contact-content {
-  background-color: #4f5da5;
+  background-color: #2e3760;
+  color: #cdd2e7;
+}
+
+.contact-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-div a {
+  color: #cdd2e7;
+}
+
+.contact-div a:hover {
   color: #141724;
 }
