@@ -1,12 +1,12 @@
 /* == Custom Font == */
 
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@200;400;600&display=swap');
 
 /* == Reset & Global configs. == */
 * {
   border: none;
   font-size: 100%;
-  font-family: 'Architects Daughter', cursive;
+  font-family: 'Mali', cursive, sans-serif;
   margin: 0;
   outline: none;
   padding: 0;
@@ -34,6 +34,7 @@ h2 {
 
 h3 {
   font-size: 1.3em;
+  font-weight: 600;
 }
 
 img {
@@ -42,6 +43,7 @@ img {
 
 p {
   font-size: 1em;
+  font-weight: 400;
 }
 
 section {
@@ -176,7 +178,7 @@ h3 {
 
 .experience-div ul {
   padding-top: 5px;
-  text-indent: 20px;
-  list-style: square;
+  text-indent: 10px;
+  list-style: disc;
   list-style-position: inside;
 }
