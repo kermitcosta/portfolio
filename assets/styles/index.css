@@ -29,7 +29,7 @@ h2 {
   padding-top: 15px;
   font-size: 2em;
   font-weight: 600;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 h3 {
@@ -51,11 +51,23 @@ p {
 }
 
 section {
-  padding: 0px 30px;
+  /* padding: 0px 30px; */
 }
 
 ul {
   list-style: none;
+}
+
+.btn-primary {
+  color: #141724;
+  background-color: #cdd2e7;
+  border-color: #cdd2e7;
+}
+
+.btn-primary:hover {
+  color: #cdd2e7;
+  background-color: #141724;
+  border-color: #141724;
 }
 
 :target {
@@ -69,16 +81,6 @@ ul {
   background-color: #cdd2e7;
 }
 
-.home-div {
-  margin: 0 auto;
-  padding-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  text-align: justify;
-  gap: 60px;
-}
-
 .home-paragraph {
   color: #2e3760;
 }
@@ -89,14 +91,15 @@ ul {
 }
 
 .home-title {
-  text-align: center;
   color: #141724;
 }
 
 .home-img {
-  margin: 0 auto;
-  width: 200px;
-  height: 200px;
+  padding: 30px 0px;
+  margin: auto;
+  display: block;
+  width: 300px;
+  height: 300px;
 }
 
 /* == About Me == */
