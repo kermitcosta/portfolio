@@ -40,12 +40,8 @@
     width: 150px;
   }
 
-  .about-div {
-    gap: 10px;
-  }
-
   .about-paragraph {
-    margin: 15px auto;
+    margin: 30px auto;
   }
 
   .qualification-wrapper {
@@ -91,10 +87,6 @@
   p,
   h4 {
     font-size: 1.1em;
-  }
-
-  section {
-    padding: 0px 100px;
   }
 
   .navbar {
@@ -149,6 +141,10 @@
     height: 200px;
   }
 
+  .about-paragraph {
+    text-align: justify;
+  }
+
   footer {
     font-size: 1em;
   }
@@ -163,10 +159,6 @@
   p,
   h3 {
     font-size: 1.2em;
-  }
-
-  section {
-    padding: 0px 250px;
   }
 
   .home-img {
@@ -186,14 +178,16 @@
     font-size: 1.3em;
   }
 
-  section {
-    padding: 0px 350px;
-  }
-
   .home-img {
     width: 450px;
     height: 450px;
   }
+
+  .about-img {
+    width: 275px;
+    height: 275px;
+  }
+
   .qualification-paragraph,
   .experience-paragraph {
     width: 400px;

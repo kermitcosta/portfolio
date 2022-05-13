@@ -111,15 +111,6 @@ ul {
   color: #cdd2e7;
 }
 
-.about-div {
-  margin: 0 auto;
-  padding-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  text-align: justify;
-  gap: 30px;
-}
-
 .about-highlight-text {
   color: #cdd2e7;
   font-weight: 600;
