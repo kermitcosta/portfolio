@@ -50,10 +50,6 @@ p {
   font-weight: 400;
 }
 
-section {
-  /* padding: 0px 30px; */
-}
-
 ul {
   list-style: none;
 }
@@ -131,6 +127,10 @@ h3 {
   padding-bottom: 15px;
 }
 
+.qualification-content {
+  background-color: #2e3760;
+}
+
 .qualification-content a {
   color: #919aca;
 }
@@ -139,23 +139,12 @@ h3 {
   color: #141724;
 }
 
-.qualification-content {
-  background-color: #2e3760;
+.card {
+  color: #2e3760;
 }
 
-.qualification-title {
-  color: #919aca;
-}
-
-.qualification-paragraph {
-  color: #cdd2e7;
-}
-
-.qualification-div {
-  padding-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+.card-group {
+  margin: 0 auto;
 }
 
 /* == Professional Experience == */

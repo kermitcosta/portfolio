@@ -44,17 +44,6 @@
     margin: 30px auto;
   }
 
-  .qualification-wrapper {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-  }
-
-  .qualification-paragraph,
-  .experience-paragraph {
-    width: 300px;
-  }
-
   .experience-div {
     flex-direction: row;
     justify-content: space-between;
@@ -186,11 +175,6 @@
   .about-img {
     width: 275px;
     height: 275px;
-  }
-
-  .qualification-paragraph,
-  .experience-paragraph {
-    width: 400px;
   }
 
   .experience-div ul {
