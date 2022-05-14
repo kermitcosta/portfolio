@@ -44,15 +44,6 @@
     margin: 30px auto;
   }
 
-  .experience-div {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .experience-div ul {
-    width: 300px;
-  }
-
   .contact-div {
     flex-direction: row;
     justify-content: space-evenly;
@@ -175,10 +166,5 @@
   .about-img {
     width: 275px;
     height: 275px;
-  }
-
-  .experience-div ul {
-    font-size: 1.3em;
-    width: 400px;
   }
 }

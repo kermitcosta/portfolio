@@ -156,21 +156,6 @@ h3 {
   color: #141724;
 }
 
-.experience-paragraph {
-  margin: 0;
-}
-
-.experience-div {
-  padding-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.experience-div ul {
-  list-style: disc;
-}
-
 /* == Contact == */
 .contact-content {
   background-color: #2e3760;
