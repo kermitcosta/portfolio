@@ -4,16 +4,16 @@ footer {
   bottom: 0;
   height: 90px;
   width: 100%;
-  background-color: #141724;
+  background-color: #12130f;
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #cdd2e7;
+  color: #f2f2f2;
   font-size: 0.9em;
 }
 
 footer p {
-  border-top: solid 0.5px #919aca;
+  border-top: solid 0.5px #f2f2f2;
   padding: 5px 0px;
   font-weight: 900;
 }
