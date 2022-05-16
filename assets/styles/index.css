@@ -5,7 +5,6 @@
 /* == Reset & Global configs. == */
 * {
   border: none;
-  font-size: 100%;
   font-family: 'Mali', cursive;
   margin: 0;
   outline: none;
@@ -29,29 +28,22 @@ html {
 }
 
 h2 {
-  padding-top: 15px;
-  font-size: 2em;
   font-weight: 600;
   margin-bottom: 30px;
   color: #12130f;
 }
 
-h3 {
-  font-size: 1.5em;
-  font-weight: 600;
-}
-
 h4 {
-  font-size: 1.1em;
+  color: #12130f;
+  padding-bottom: 15px;
 }
 
 img {
   max-width: 100%;
 }
 
-p {
-  font-size: 1em;
-  font-weight: 400;
+section {
+  margin-top: 100px;
 }
 
 ul {
@@ -66,20 +58,33 @@ ul {
 
 .btn-primary:hover {
   color: #f2f2f2;
-  background-color: #0d0b7d;
-  border-color: #0d0b7d;
+  background-color: #0f0d96;
+  border-color: #0f0d96;
+}
+
+.box-shadow {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05), 0 4px 8px 0 rgba(0, 0, 0, 0.05);
 }
 
 .highlight-text {
   color: #0d0b7d;
 }
 
-:target {
-  scroll-margin-top: 6em;
+.nav-link {
+  color: #12130f;
 }
 
-.card {
-  border: 0.5px solid #0d0b7d;
+.nav-link:hover {
+  color: #0d0b7d;
+}
+
+.active {
+  color: #0d0b7d;
+  text-decoration: underline 3px #12130f;
+}
+
+:target {
+  scroll-margin-top: 3em;
 }
 
 /* == Main Content == */
@@ -101,10 +106,6 @@ ul {
 }
 
 /* == Qualification == */
-h3 {
-  color: #12130f;
-  padding-bottom: 15px;
-}
 
 .qualification-content a {
   color: #0d0b7d;

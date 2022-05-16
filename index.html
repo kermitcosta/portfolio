@@ -15,422 +15,430 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./assets/styles/index.css" />
-    <link rel="stylesheet" href="./assets/styles/menu.css" />
     <link rel="stylesheet" href="./assets/styles/footer.css" />
     <link rel="stylesheet" href="./assets/styles/animations.css" />
     <link rel="stylesheet" href="./assets/styles/responsive.css" />
 
     <title>Kermit Costa - Portfólio</title>
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#pf-navbar" data-bs-offset="150">
     <!-- Menu -->
-    <header class="navbar">
-      <a href="index.html"><p class="logo">KC</p></a>
-      <div class="btn-menu-wrapper" onclick="showMenu()">
-        <div class="btn-menu"></div>
-        <div class="btn-menu"></div>
-        <div class="btn-menu"></div>
+    <nav id="pf-navbar" class="navbar navbar-expand-md bg-light fixed-top box-shadow">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><h1>KC</h1></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Sobre Mim</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#qualification">Formação</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Atuação Profissional</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <nav class="menu">
-        <a class="btn-close-menu" onclick="closeMenu()">x</a>
-        <ul>
-          <li><a class="home active" href="#home">HOME</a></li>
-          <li><a class="about" href="#about">SOBRE MIM</a></li>
-          <li><a class="qualification" href="#qualification">FORMAÇÃO</a></li>
-          <li>
-            <a class="experience" href="#experience">ATUAÇÃO PROFISSIONAL</a>
-          </li>
-          <li><a class="contact" href="#contact">CONTATO</a></li>
-          <li><a class="portfolio" href="#portfolio">PORTFÓLIO</a></li>
-        </ul>
-      </nav>
-    </header>
+    </nav>
 
     <!-- Content -->
-    <main class="content">
-      <!-- Home Content -->
-      <section class="home-content" id="home">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2 class="home-title slide-in-top">Bem-vindo(a)!</h2>
+      <main class="content">
+        <!-- Home Content -->
+        <section class="home-content" >
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h2 id="home" class="home-title slide-in-top">Bem-vindo(a)!</h2>
+              </div>
+            </div>
+            <div class="row gy-5 gx-md-5 align-items-center">
+              <div class="col-md-7">
+                <p class="home-paragraph slide-in-left">
+                  Olá, me chamo <span class="highlight-text">Kermit.</span>
+                  <br />
+                  Aqui você vai encontrar um pouco sobre minha trajetória de
+                  estudos e projetos no mundo da
+                  <span class="highlight-text">programação.</span>
+                </p>
+              </div>
+              <div class="col-md-5 justify-content-center">
+                <img
+                  class="home-img bounce-top"
+                  src="./assets/img/development-4536630.svg"
+                  alt="programmer image"
+                />
+              </div>
             </div>
           </div>
-          <div class="row gy-5 gx-md-5 align-items-center">
-            <div class="col-md-7">
-              <p class="home-paragraph slide-in-left">
-                Olá, me chamo <span class="highlight-text">Kermit.</span>
-                <br />
-                Aqui você vai encontrar um pouco sobre minha trajetória de
-                estudos e projetos no mundo da
-                <span class="highlight-text">programação.</span>
-              </p>
+        </section>
+  
+        <!-- About Content-->
+        <section class="about-content">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h2 id="about" class="about-title">Sobre mim</h2>
+              </div>
             </div>
-            <div class="col-md-5 justify-content-center">
-              <img
-                class="home-img bounce-top"
-                src="./assets/img/development-4536630.svg"
-                alt="programmer image"
-              />
+            <div class="row reveal">
+              <div class="col-md-12">
+                <img
+                  id="userPicture"
+                  class="about-img"
+                  src=""
+                  alt="foto Kermit"
+                />
+              </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- About Content-->
-      <section class="about-content" id="about">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2 class="about-title">Sobre mim</h2>
-            </div>
-          </div>
-          <div class="row reveal">
-            <div class="col-md-12">
-              <img
-                id="userPicture"
-                class="about-img"
-                src=""
-                alt="foto Kermit"
-              />
-            </div>
-          </div>
-          <div class="row reveal">
-            <div class="col-12 col-md-4">
-              <p class="about-paragraph">
-                Bacharel em
-                <span class="highlight-text">Administração</span> pela
-                Universidade Federal da Paraíba e atualmente cursando o segundo
-                semestre de
-                <span class="highlight-text"
-                  >Análise e Desenvolvimento de Sistemas</span
-                >
-                na faculdade Estácio.
-              </p>
-            </div>
-            <div class="col-12 col-md-4">
-              <p class="about-paragraph">
-                Quando criança, por um breve período cheguei a programar coisas
-                básicas em mIRC script. Com a pandemia, comecei a estudar
-                programação novamente e resolvi realizar uma segunda graduação
-                para transicionar de carreira.
-              </p>
-            </div>
-            <div class="col-12 col-md-4">
-              <p class="about-paragraph">
-                Atualmente, estudo com foco no
-                <span class="highlight-text">Front-End</span>, interessado
-                em aprender a desenvolver aplicações que permitam uma boa
-                experiência para o usuário com performance e grande utilidade.
-              </p>
+            <div class="row reveal">
+              <div class="col-12 col-md-4">
+                <p class="about-paragraph">
+                  Bacharel em
+                  <span class="highlight-text">Administração</span> pela
+                  Universidade Federal da Paraíba e atualmente cursando o segundo
+                  semestre de
+                  <span class="highlight-text"
+                    >Análise e Desenvolvimento de Sistemas</span
+                  >
+                  na faculdade Estácio.
+                </p>
+              </div>
+              <div class="col-12 col-md-4">
+                <p class="about-paragraph">
+                  Quando criança, por um breve período cheguei a programar coisas
+                  básicas em mIRC script. Com a pandemia, comecei a estudar
+                  programação novamente e resolvi realizar uma segunda graduação
+                  para transicionar de carreira.
+                </p>
+              </div>
+              <div class="col-12 col-md-4">
+                <p class="about-paragraph">
+                  Atualmente, estudo com foco no
+                  <span class="highlight-text">Front-End</span>, interessado
+                  em aprender a desenvolver aplicações que permitam uma boa
+                  experiência para o usuário com performance e grande utilidade.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <!-- Qualification Content-->
-      <section class="qualification-content" id="qualification">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <h2 class="qualification-title">Formação</h2>
-            </div>
-          </div>
-
-          <div class="row reveal">
+        </section>
+  
+        <!-- Qualification Content-->
+        <section class="qualification-content" >
+          <div class="container">
             <div class="row">
               <div class="col-12">
-                <h3>Ensino Superior</h3>
+                <h2 id="qualification" class="qualification-title">Formação</h2>
               </div>
             </div>
-            <div class="row">
-              <div class="card-group mb-4">
-                <div class="card text-center" style="width: 18rem">
-                  <div class="card-body">
-                    <h5 class="card-title">Estácio</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">
-                      2021 - 2024 (previsão)
-                    </h6>
-                    <p class="card-text">
-                      Curso Superior de Tecnologia (CST), Análise e
-                      Desenvolvimento de Sistemas
-                    </p>
-                  </div>
-                </div>
-                <div class="card text-center" style="width: 18rem">
-                  <div class="card-body">
-                    <h5 class="card-title">Universidade Federal da Paraíba</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">
-                      2021 (Concluído)
-                    </h6>
-                    <p class="card-text">Bacharelado em Administração</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row reveal">
-            <div class="row">
-              <div class="col-12">
-                <h3>Cursos Complementares</h3>
-              </div>
-            </div>
-            <div class="row">
-              <div class="card-group mb-4">
-                <div class="card text-center" style="width: 18rem">
-                  <div class="card-body">
-                    <h5 class="card-title">Digital Innovation One Inc.</h5>
-                    <p class="card-text mb-2">Bootcamp HTML Web Developer</p>
-                    <a
-                      href="https://www.dio.me/certificate/7F2A5199/"
-                      target="_blank"
-                      class="card-link"
-                      >Certificado</a
-                    >
-                  </div>
-                </div>
-                <div class="card text-center" style="width: 18rem">
-                  <div class="card-body">
-                    <h5 class="card-title">Digital Innovation One Inc.</h5>
-                    <p class="card-text mb-2">
-                      Bootcamp Take Blip Web Developer
-                    </p>
-                    <a
-                      href="https://www.dio.me/certificate/7F2A5199/"
-                      target="_blank"
-                      class="card-link"
-                      >Certificado</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Experience Content -->
-      <section class="experience-content" id="experience">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <h2 class="experience-title">Atuação Profissional</h2>
-            </div>
-          </div>
-
-          <div class="row reveal">
-            <div class="row">
-              <div class="col-12">
-                <h3>Experiência</h3>
-              </div>
-            </div>
-            <div class="row">
-              <div class="card-group mb-4">
-
-                <div class="card text-center" style="width: 18rem">
-                  <div class="card-body">
-                    <h5 class="card-title">Agente Administrativo</h5>
-                    <h5 class="card-title">Prefeitura Municipal de João Pessoa</h5>
-                    <h6 class="card-subtitle mb-0 text-muted">
-                      Junho 2017 - Junho 2021
-                    </h6>
-                    <p class="card-text">
-                      <ul class="list-unstyled">
-                       <li class="list-group-item mb-1">Atividades exercidas</li> 
-                        <li>Gestão de frota</li>
-                        <li>Escala de funcionários</li>
-                        <li>Elaboração e organização de documentos</li>
-                        <li>Atendimento ao público</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-
-          <div class="row reveal">
-            <div class="row">
-              <div class="col-12">
-                <h3>Outras atividades</h3>
-              </div>
-            </div>
-            <div class="row">
-              <div class="card-group mb-4">
-                
-                <div class="card text-center" style="width: 18rem">
-                  <div class="card-body">
-                    <h5 class="card-title">Voluntário</h5>
-                    <h5 class="card-title">Projeto de Extensão - Sala de Ações UFPB</h5>
-                    <h6 class="card-subtitle mb-0 text-muted">
-                      Junho 2021 - Abril 2022
-                    </h6>
-                    <p class="card-text">
-                      <ul class="list-unstyled">
-                        <li class="list-group-item mb-1">Atividades exercidas</li>
-                        <li >Análise Gráfica</li>
-                        <li>Produção de Relatórios</li>
-                        <li>Apresentações Semanais</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact Content-->
-      <section class="contact-content" id="contact">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2 class="contact-title">Contato</h2>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-12 col-md-6 contact-links-col reveal">
+  
+            <div class="row reveal">
               <div class="row">
                 <div class="col-12">
-                  <h3>Contato Pessoal</h3>
+                  <h4>Ensino Superior</h4>
                 </div>
               </div>
-
+              <div class="row">
+                <div class="card-group mb-4">
+                  <div class="card text-center" style="width: 18rem">
+                    <div class="card-body">
+                      <h5 class="card-title">Estácio</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        2021 - 2024 (previsão)
+                      </h6>
+                      <p class="card-text">
+                        Curso Superior de Tecnologia (CST), Análise e
+                        Desenvolvimento de Sistemas
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 18rem">
+                    <div class="card-body">
+                      <h5 class="card-title">Universidade Federal da Paraíba</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">
+                        2021 (Concluído)
+                      </h6>
+                      <p class="card-text">Bacharelado em Administração</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="row reveal">
               <div class="row">
                 <div class="col-12">
-
-                  <div class="row">
-                    <div class="col-12">
-                      <img src="./assets/img/envelope.svg" alt="envelope icon" />
-                      <a href="mailto:kermitcst@gmail.com">kermitcst@gmail.com</a>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-12">
-                      <img src="./assets/img/instagram.svg" alt="whatsapp icon" />
-                      <a href="https://www.instagram.com/kermitc" target="_blank"
-                      >Instagram</a>
-                    </div>
-                  </div>
-
+                  <h4>Cursos Complementares</h4>
                 </div>
               </div>
-
-              <div class="row mt-5">
-                <div class="col-12">
-                  <h3>Redes Sociais</h3>
-                </div>
-                <div class="col-12 col-md-6">
-                  <div class="row">
-                    <div class="col">
-                      <img src="./assets/img/linkedin.svg" alt="envelope icon" />
+              <div class="row">
+                <div class="card-group mb-4">
+                  <div class="card text-center" style="width: 18rem">
+                    <div class="card-body">
+                      <h5 class="card-title">Digital Innovation One Inc.</h5>
+                      <p class="card-text mb-2">Bootcamp HTML Web Developer</p>
                       <a
-                        href="https://www.linkedin.com/in/kermit-costa/"
+                        href="https://www.dio.me/certificate/7F2A5199/"
                         target="_blank"
-                        >Linkedin</a
+                        class="card-link"
+                        >Certificado</a
                       >
                     </div>
                   </div>
-
-                  <div class="row">
-                    <div class="col">
-                      <img src="./assets/img/github.svg" alt="whatsapp icon" />
-                      <a href="https://github.com/kermitcosta" target="_blank"
-                        >Github</a
+                  <div class="card text-center" style="width: 18rem">
+                    <div class="card-body">
+                      <h5 class="card-title">Digital Innovation One Inc.</h5>
+                      <p class="card-text mb-2">
+                        Bootcamp Take Blip Web Developer
+                      </p>
+                      <a
+                        href="https://www.dio.me/certificate/7F2A5199/"
+                        target="_blank"
+                        class="card-link"
+                        >Certificado</a
                       >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <!-- Experience Content -->
+        <section class="experience-content" >
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h2 id="experience" class="experience-title">Atuação Profissional</h2>
+              </div>
+            </div>
+  
+            <div class="row reveal">
+              <div class="row">
+                <div class="col-12">
+                  <h4>Experiência</h4>
+                </div>
+              </div>
+              <div class="row">
+                <div class="card-group mb-4">
+  
+                  <div class="card text-center" style="width: 18rem">
+                    <div class="card-body">
+                      <h5 class="card-title">Agente Administrativo</h5>
+                      <h5 class="card-title">Prefeitura Municipal de João Pessoa</h5>
+                      <h6 class="card-subtitle mb-0 text-muted">
+                        Junho 2017 - Junho 2021
+                      </h6>
+                      <p class="card-text">
+                        <ul class="list-unstyled">
+                         <li class="list-group-item mb-1">Atividades exercidas</li> 
+                          <li>Gestão de frota</li>
+                          <li>Escala de funcionários</li>
+                          <li>Elaboração e organização de documentos</li>
+                          <li>Atendimento ao público</li>
+                        </ul>
+                      </p>
                     </div>
                   </div>
                   
                 </div>
-                
-                <div class="col-12 col-md-6">
-                  <div class="row">
-                    <div class="col">
-                      <img src="./assets/img/instagram.svg" alt="whatsapp icon" />
-                      <a href="https://www.instagram.com/kermitc" target="_blank"
-                      >Instagram</a>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col">
-                      <img src="./assets/img/twitter.svg" alt="whatsapp icon" />
-                      <a href="https://www.twitter.com/costakermit" target="_blank"
-                        >Twitter</a
-                      >
-                    </div>
-                  </div>
-
+              </div>
+            </div>
+  
+            <div class="row reveal">
+              <div class="row">
+                <div class="col-12">
+                  <h4>Outras atividades</h4>
                 </div>
-
               </div>
-
-            </div>
-
-            <div class="col-12 col-md-6 contact-form-col">
-              <div class="row mt-5 mt-sm-0 mb-4">
-
-                <form class="reveal">
-                  <div class="form-floating mb-3">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="floatingInput"
-                      placeholder="Nome"
-                      required
-                    />
-                    <label for="floatingInput">Nome</label>
-                    <div id="emailHelp" class="form-text"></div>
+              <div class="row">
+                <div class="card-group mb-4">
+                  
+                  <div class="card text-center" style="width: 18rem">
+                    <div class="card-body">
+                      <h5 class="card-title">Voluntário</h5>
+                      <h5 class="card-title">Projeto de Extensão - Sala de Ações UFPB</h5>
+                      <h6 class="card-subtitle mb-0 text-muted">
+                        Junho 2021 - Abril 2022
+                      </h6>
+                      <p class="card-text">
+                        <ul class="list-unstyled">
+                          <li class="list-group-item mb-1">Atividades exercidas</li>
+                          <li >Análise Gráfica</li>
+                          <li>Produção de Relatórios</li>
+                          <li>Apresentações Semanais</li>
+                        </ul>
+                      </p>
+                    </div>
                   </div>
-                  <div class="form-floating mb-3">
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="floatingInput"
-                      placeholder="nome@example.com"
-                      required
-                    />
-                    <label for="floatingInput">Email</label>
-                  </div>
-                  <div class="form-floating">
-                    <textarea
-                      class="form-control"
-                      placeholder="Leave a comment here"
-                      id="floatingTextarea"
-                      required
-                      style="height: 100px"
-                    ></textarea>
-                    <label for="floatingTextarea">Mensagem</label>
-                  </div>
-                  <br />
-                  <button type="button" class="btn btn-primary">Enviar</button>
-                </form>
+  
+                </div>
               </div>
             </div>
           </div>
-
-        </div>
-      </section>
-
-      <!-- Content-Portfolio -->
-      <section id="portfolio">
-
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2>Portfólio</h2>
+        </section>
+  
+        <!-- Contact Content-->
+        <section class="contact-content" >
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h2 id="contact" class="contact-title">Contato</h2>
+              </div>
+            </div>
+  
+            <div class="row">
+              <div class="col-12 col-md-6 contact-links-col reveal">
+                <div class="row">
+                  <div class="col-12">
+                    <h4>Contato Pessoal</h4>
+                  </div>
+                </div>
+  
+                <div class="row">
+                  <div class="col-12">
+  
+                    <div class="row">
+                      <div class="col-12">
+                        <img src="./assets/img/envelope.svg" alt="envelope icon" />
+                        <a href="mailto:kermitcst@gmail.com">kermitcst@gmail.com</a>
+                      </div>
+                    </div>
+  
+                    <div class="row">
+                      <div class="col-12">
+                        <img src="./assets/img/instagram.svg" alt="whatsapp icon" />
+                        <a href="https://www.instagram.com/kermitc" target="_blank"
+                        >Instagram</a>
+                      </div>
+                    </div>
+  
+                  </div>
+                </div>
+  
+                <div class="row mt-5">
+                  <div class="col-12">
+                    <h4>Redes Sociais</h4>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="row">
+                      <div class="col">
+                        <img src="./assets/img/linkedin.svg" alt="envelope icon" />
+                        <a
+                          href="https://www.linkedin.com/in/kermit-costa/"
+                          target="_blank"
+                          >Linkedin</a
+                        >
+                      </div>
+                    </div>
+  
+                    <div class="row">
+                      <div class="col">
+                        <img src="./assets/img/github.svg" alt="whatsapp icon" />
+                        <a href="https://github.com/kermitcosta" target="_blank"
+                          >Github</a
+                        >
+                      </div>
+                    </div>
+                    
+                  </div>
+                  
+                  <div class="col-12 col-md-6">
+                    <div class="row">
+                      <div class="col">
+                        <img src="./assets/img/instagram.svg" alt="whatsapp icon" />
+                        <a href="https://www.instagram.com/kermitc" target="_blank"
+                        >Instagram</a>
+                      </div>
+                    </div>
+  
+                    <div class="row">
+                      <div class="col">
+                        <img src="./assets/img/twitter.svg" alt="whatsapp icon" />
+                        <a href="https://www.twitter.com/costakermit" target="_blank"
+                          >Twitter</a
+                        >
+                      </div>
+                    </div>
+  
+                  </div>
+  
+                </div>
+  
+              </div>
+  
+              <div class="col-12 col-md-6 contact-form-col">
+                <div class="row mt-5 mt-sm-0 mb-4">
+  
+                  <form class="reveal">
+                    <div class="form-floating mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="Nome"
+                        required
+                      />
+                      <label for="floatingInput">Nome</label>
+                      <div id="emailHelp" class="form-text"></div>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="nome@example.com"
+                        required
+                      />
+                      <label for="floatingInput">Email</label>
+                    </div>
+                    <div class="form-floating">
+                      <textarea
+                        class="form-control"
+                        placeholder="Leave a comment here"
+                        id="floatingTextarea"
+                        required
+                        style="height: 150px"
+                      ></textarea>
+                      <label for="floatingTextarea">Mensagem</label>
+                    </div>
+                    <br />
+                    <button type="button" class="btn btn-primary">Enviar</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        </section>
+  
+        <!-- Content-Portfolio -->
+        <section id="portfolio" style="height: 350px;">
+  
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h2>Portfólio</h2>
+              </div>
             </div>
           </div>
-        </div>
-        
-      </section>
-    </main>
+          
+        </section>
+      </main>
 
     <!-- Footer -->
     <footer>
