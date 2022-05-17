@@ -31,6 +31,7 @@ h2 {
   font-weight: 600;
   margin-bottom: 30px;
   color: #12130f;
+  font-size: 2rem;
 }
 
 h4 {
@@ -48,6 +49,11 @@ section {
 
 ul {
   list-style: none;
+}
+
+.active {
+  color: #0d0b7d;
+  text-decoration: underline 2px #12130f;
 }
 
 .btn-primary {
@@ -70,6 +76,10 @@ ul {
   color: #0d0b7d;
 }
 
+.navbar-toggler-icon {
+  background-image: url(/assets/img/menu.svg);
+}
+
 .nav-link {
   color: #12130f;
 }
@@ -78,9 +88,10 @@ ul {
   color: #0d0b7d;
 }
 
-.active {
-  color: #0d0b7d;
-  text-decoration: underline 3px #12130f;
+.tech-logo {
+  background-color: #0d0b7d;
+  border-radius: 2rem;
+  padding: 0.25rem;
 }
 
 :target {
