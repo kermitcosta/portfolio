@@ -51,11 +51,6 @@ ul {
   list-style: none;
 }
 
-.active {
-  color: #0d0b7d;
-  text-decoration: underline 2px #12130f;
-}
-
 .btn-primary {
   color: #f2f2f2;
   background-color: #0d0b7d;
@@ -92,6 +87,16 @@ ul {
   background-color: #0d0b7d;
   border-radius: 2rem;
   padding: 0.25rem;
+  cursor: pointer;
+}
+
+.tech-logo:hover {
+  background-color: #0f0d96;
+}
+
+.active {
+  color: #0d0b7d;
+  text-decoration: underline 2px #12130f;
 }
 
 :target {
