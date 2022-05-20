@@ -15,7 +15,6 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./assets/styles/index.css" />
-    <link rel="stylesheet" href="./assets/styles/footer.css" />
     <link rel="stylesheet" href="./assets/styles/animations.css" />
     <link rel="stylesheet" href="./assets/styles/responsive.css" />
 
@@ -23,561 +22,584 @@
   </head>
 
   <body data-bs-spy="scroll" data-bs-target="#pf-navbar" data-bs-offset="150">
-
     <!-- Menu -->
-    <nav id="pf-navbar" class="navbar navbar-expand-md bg-light fixed-top box-shadow">
-      <div class="container">
-        <a class="navbar-brand" href="index.html"><h1>KC</h1></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto text-center">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">Sobre Mim</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#qualification">Formação</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#experience">Atuação Profissional</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contato</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-          </ul>
+    <nav id="pf-navbar" class="navbar navbar-expand-md bg-light fixed-top box-shadow-below">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><h1>KC</h1></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto text-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">Sobre Mim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#qualification">Formação</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experience">Atuação Profissional</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
     </nav>
-
+    
     <!-- Content -->
-      <main class="content">
-        <!-- Home Content -->
-        <section class="home-content" >
-          <div class="container">
+    <main class="content">
+      <!-- Home Content -->
+      <section class="home-content" >
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2 id="home" class="home-title slide-in-top">Bem-vindo(a)!</h2>
+            </div>
+          </div>
+          <div class="row gy-5 gx-md-5 align-items-center">
+            <div class="col-md-7">
+              <p class="home-paragraph slide-in-left">
+                Olá, me chamo <span class="highlight-text">Kermit.</span>
+                <br />
+                Aqui você vai encontrar um pouco sobre minha trajetória de
+                estudos e projetos no mundo da
+                <span class="highlight-text">programação.</span>
+              </p>
+            </div>
+            <div class="col-md-5 justify-content-center">
+              <img
+                class="home-img bounce-top"
+                src="./assets/img/development-4536630.svg"
+                alt="programmer image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <!-- About Content-->
+      <section class="about-content">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2 id="about" class="about-title">Sobre mim</h2>
+            </div>
+          </div>
+          <div class="row reveal">
+            <div class="col-md-12">
+              <img
+                id="userPicture"
+                class="about-img"
+                src=""
+                alt="foto Kermit"
+              />
+            </div>
+          </div>
+          <div class="row reveal">
+            <div class="col-12 col-md-4">
+              <p class="about-paragraph">
+                Bacharel em
+                <span class="highlight-text">Administração</span> pela
+                Universidade Federal da Paraíba e atualmente cursando o segundo
+                semestre de
+                <span class="highlight-text"
+                  >Análise e Desenvolvimento de Sistemas</span
+                >
+                na faculdade Estácio.
+              </p>
+            </div>
+            <div class="col-12 col-md-4">
+              <p class="about-paragraph">
+                Quando criança, por um breve período cheguei a programar coisas
+                básicas em mIRC script. Com a pandemia, comecei a estudar
+                programação novamente e resolvi realizar uma segunda graduação
+                para transicionar de carreira.
+              </p>
+            </div>
+            <div class="col-12 col-md-4">
+              <p class="about-paragraph">
+                Atualmente, estudo com foco no
+                <span class="highlight-text">Front-End</span>, interessado
+                em aprender a desenvolver aplicações que permitam uma boa
+                experiência para o usuário com performance e grande utilidade.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <!-- Qualification Content-->
+      <section class="qualification-content" >
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 id="qualification" class="qualification-title">Formação</h2>
+            </div>
+          </div>
+
+          <div class="row reveal">
             <div class="row">
-              <div class="col">
-                <h2 id="home" class="home-title slide-in-top">Bem-vindo(a)!</h2>
+              <div class="col-12">
+                <h4>Ensino Superior</h4>
               </div>
             </div>
-            <div class="row gy-5 gx-md-5 align-items-center">
-              <div class="col-md-7">
-                <p class="home-paragraph slide-in-left">
-                  Olá, me chamo <span class="highlight-text">Kermit.</span>
+            <div class="row">
+              <div class="card-group mb-4">
+                <div class="card text-center border-dark" style="width: 18rem">
+                  <div class="card-body">
+                    <h5 class="card-title">Estácio</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                      2021 - 2024 (previsão)
+                    </h6>
+                    <p class="card-text">
+                      Curso Superior de Tecnologia (CST), Análise e
+                      Desenvolvimento de Sistemas
+                    </p>
+                  </div>
+                </div>
+                <div class="card text-center border-dark" style="width: 18rem">
+                  <div class="card-body">
+                    <h5 class="card-title">Universidade Federal da Paraíba</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                      2021 (Concluído)
+                    </h6>
+                    <p class="card-text">Bacharelado em Administração</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row reveal">
+            <div class="row">
+              <div class="col-12">
+                <h4>Cursos Complementares</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="card-group mb-4">
+                <div class="card text-center border-dark" style="width: 18rem">
+                  <div class="card-body">
+                    <h5 class="card-title">Digital Innovation One Inc.</h5>
+                    <p class="card-text mb-2">Bootcamp HTML Web Developer</p>
+                    <a
+                      href="https://www.dio.me/certificate/7F2A5199/"
+                      target="_blank"
+                      class="card-link"
+                      >Certificado</a
+                    >
+                  </div>
+                </div>
+                <div class="card text-center border-dark" style="width: 18rem">
+                  <div class="card-body">
+                    <h5 class="card-title">Digital Innovation One Inc.</h5>
+                    <p class="card-text mb-2">
+                      Bootcamp Take Blip Web Developer
+                    </p>
+                    <a
+                      href="https://www.dio.me/certificate/7F2A5199/"
+                      target="_blank"
+                      class="card-link"
+                      >Certificado</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <!-- Experience Content -->
+      <section class="experience-content" >
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 id="experience" class="experience-title">Atuação Profissional</h2>
+            </div>
+          </div>
+
+          <div class="row reveal">
+            <div class="row">
+              <div class="col-12">
+                <h4>Experiência</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="card-group mb-4">
+
+                <div class="card text-center border-dark" style="width: 18rem">
+                  <div class="card-body">
+                    <h5 class="card-title">Agente Administrativo</h5>
+                    <h5 class="card-title">Prefeitura Municipal de João Pessoa</h5>
+                    <h6 class="card-subtitle mb-0 text-muted">
+                      Junho 2017 - Junho 2021
+                    </h6>
+                    <p class="card-text">
+                      <ul class="list-unstyled">
+                        <li class="list-group-item mb-1">Atividades exercidas</li> 
+                        <li>Gestão de frota</li>
+                        <li>Escala de funcionários</li>
+                        <li>Elaboração e organização de documentos</li>
+                        <li>Atendimento ao público</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="row reveal">
+            <div class="row">
+              <div class="col-12">
+                <h4>Outras atividades</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="card-group mb-4">
+                
+                <div class="card text-center border-dark" style="width: 18rem">
+                  <div class="card-body">
+                    <h5 class="card-title">Voluntário</h5>
+                    <h5 class="card-title">Projeto de Extensão - Sala de Ações UFPB</h5>
+                    <h6 class="card-subtitle mb-0 text-muted">
+                      Junho 2021 - Abril 2022
+                    </h6>
+                    <p class="card-text">
+                      <ul class="list-unstyled">
+                        <li class="list-group-item mb-1">Atividades exercidas</li>
+                        <li >Análise Gráfica</li>
+                        <li>Produção de Relatórios</li>
+                        <li>Apresentações Semanais</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <!-- Contact Content-->
+      <section class="contact-content" >
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2 id="contact" class="contact-title">Contato</h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-md-6 contact-links-col reveal">
+              <div class="row">
+                <div class="col-12">
+                  <h4>Contato Pessoal</h4>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12">
+
+                  <div class="row">
+                    <div class="col-12">
+                      <img src="./assets/img/envelope.svg" alt="envelope icon" />
+                      <a href="mailto:kermitcst@gmail.com">kermitcst@gmail.com</a>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12">
+                      <img src="./assets/img/whatsapp.svg" alt="whatsapp icon" />
+                      <a href="#" target="_blank"
+                      >(83) 99672-0111</a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row mt-5">
+                <div class="col-12">
+                  <h4>Redes Sociais</h4>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="row">
+                    <div class="col">
+                      <img src="./assets/img/linkedin.svg" alt="envelope icon" />
+                      <a
+                        href="https://www.linkedin.com/in/kermit-costa/"
+                        target="_blank"
+                        >Linkedin</a
+                      >
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col">
+                      <img src="./assets/img/github.svg" alt="whatsapp icon" />
+                      <a href="https://github.com/kermitcosta" target="_blank"
+                        >Github</a
+                      >
+                    </div>
+                  </div>
+                  
+                </div>
+                
+                <div class="col-12 col-md-6">
+                  <div class="row">
+                    <div class="col">
+                      <img src="./assets/img/instagram.svg" alt="whatsapp icon" />
+                      <a href="https://www.instagram.com/kermitc" target="_blank"
+                      >Instagram</a>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col">
+                      <img src="./assets/img/twitter.svg" alt="whatsapp icon" />
+                      <a href="https://www.twitter.com/costakermit" target="_blank"
+                        >Twitter</a
+                      >
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-12 col-md-6 contact-form-col">
+              <div class="row mt-5 mt-sm-0 mb-4">
+
+                <form class="reveal">
+                  <div class="form-floating mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="floatingInput"
+                      placeholder="Nome"
+                      required
+                    />
+                    <label for="floatingInput">Nome</label>
+                    <div id="emailHelp" class="form-text"></div>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="floatingInput"
+                      placeholder="nome@example.com"
+                      required
+                    />
+                    <label for="floatingInput">Email</label>
+                  </div>
+                  <div class="form-floating">
+                    <textarea
+                      class="form-control"
+                      placeholder="Leave a comment here"
+                      id="floatingTextarea"
+                      required
+                      style="height: 150px"
+                    ></textarea>
+                    <label for="floatingTextarea">Mensagem</label>
+                  </div>
                   <br />
-                  Aqui você vai encontrar um pouco sobre minha trajetória de
-                  estudos e projetos no mundo da
-                  <span class="highlight-text">programação.</span>
-                </p>
-              </div>
-              <div class="col-md-5 justify-content-center">
-                <img
-                  class="home-img bounce-top"
-                  src="./assets/img/development-4536630.svg"
-                  alt="programmer image"
-                />
+                  <button type="button" class="btn btn-primary">Enviar</button>
+                </form>
               </div>
             </div>
           </div>
-        </section>
-  
-        <!-- About Content-->
-        <section class="about-content">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <h2 id="about" class="about-title">Sobre mim</h2>
-              </div>
-            </div>
-            <div class="row reveal">
-              <div class="col-md-12">
-                <img
-                  id="userPicture"
-                  class="about-img"
-                  src=""
-                  alt="foto Kermit"
-                />
-              </div>
-            </div>
-            <div class="row reveal">
-              <div class="col-12 col-md-4">
-                <p class="about-paragraph">
-                  Bacharel em
-                  <span class="highlight-text">Administração</span> pela
-                  Universidade Federal da Paraíba e atualmente cursando o segundo
-                  semestre de
-                  <span class="highlight-text"
-                    >Análise e Desenvolvimento de Sistemas</span
-                  >
-                  na faculdade Estácio.
-                </p>
-              </div>
-              <div class="col-12 col-md-4">
-                <p class="about-paragraph">
-                  Quando criança, por um breve período cheguei a programar coisas
-                  básicas em mIRC script. Com a pandemia, comecei a estudar
-                  programação novamente e resolvi realizar uma segunda graduação
-                  para transicionar de carreira.
-                </p>
-              </div>
-              <div class="col-12 col-md-4">
-                <p class="about-paragraph">
-                  Atualmente, estudo com foco no
-                  <span class="highlight-text">Front-End</span>, interessado
-                  em aprender a desenvolver aplicações que permitam uma boa
-                  experiência para o usuário com performance e grande utilidade.
-                </p>
-              </div>
+
+        </div>
+      </section>
+    
+      <!-- Content-Portfolio -->
+      <section id="portfolio">
+
+        <div class="container mb-5">
+          <div class="row">
+            <div class="col">
+              <h2>Portfólio</h2>
             </div>
           </div>
-        </section>
-  
-        <!-- Qualification Content-->
-        <section class="qualification-content" >
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <h2 id="qualification" class="qualification-title">Formação</h2>
-              </div>
-            </div>
-  
-            <div class="row reveal">
-              <div class="row">
-                <div class="col-12">
-                  <h4>Ensino Superior</h4>
+          
+          <div class="row row-cols-1 row-cols-md-3 mb-5 g-4 reveal">
+
+            <div class="col">
+              <div class="card h-100">
+                <img class="card-img-top" src="./assets/img/demo.gif" alt="projeto1">
+                <div class="card-body">
+                  <h5 class="card-title">Projeto 1</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Desafio técnico DoutorMultas</h6>
+                  <p class="card-text">A aplicação exibe para o usuário fabricantes de veículos a partir de uma consulta API. Ao clicar em um determinado fabricante, uma nova página é aberta exibindo todos os veículos daquele fabricante. </p>
+                  <p class="card-text mb-2"><small class="text-muted">Tecnologias utilizadas</small></p>
+                  <img class="tech-logo" data-bs-toggle="modal" data-bs-target="#techModal" data-bs-tech="javaScript" src="/assets/img/javascriptlogo.svg" alt="logo javascript">
+                  <img class="tech-logo" data-bs-toggle="modal" data-bs-target="#techModal" data-bs-tech="html5" src="/assets/img/html5logo.svg" alt="logo html5">
+                  <img class="tech-logo" data-bs-toggle="modal" data-bs-target="#techModal" data-bs-tech="css3" src="/assets/img/css3logo.svg" alt="logo css3">
+                  <img class="tech-logo" data-bs-toggle="modal" data-bs-target="#techModal" data-bs-tech="bootStrap" src="/assets/img/bootstraplogo.svg" alt="loggo bootstrap">
                 </div>
-              </div>
-              <div class="row">
-                <div class="card-group mb-4">
-                  <div class="card text-center border-dark" style="width: 18rem">
-                    <div class="card-body">
-                      <h5 class="card-title">Estácio</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">
-                        2021 - 2024 (previsão)
-                      </h6>
-                      <p class="card-text">
-                        Curso Superior de Tecnologia (CST), Análise e
-                        Desenvolvimento de Sistemas
-                      </p>
-                    </div>
-                  </div>
-                  <div class="card text-center border-dark" style="width: 18rem">
-                    <div class="card-body">
-                      <h5 class="card-title">Universidade Federal da Paraíba</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">
-                        2021 (Concluído)
-                      </h6>
-                      <p class="card-text">Bacharelado em Administração</p>
-                    </div>
-                  </div>
+                <div class="card-footer d-inline-flex justify-content-between">
+                  <a href="https://kermitcosta.github.io/desafio-tecnico-drmultas/" target="_blank" class="card-link">Link</a>
+                  <a href="https://github.com/kermitcosta/desafio-tecnico-drmultas" target="_blank" class="card-link">Repositório</a>
                 </div>
               </div>
             </div>
-  
-            <div class="row reveal">
-              <div class="row">
-                <div class="col-12">
-                  <h4>Cursos Complementares</h4>
+
+            <div class="col">
+              <div class="card h-100">
+                <img class="card-img-top" src="./assets/img/demo-nft-component.gif" alt="projeto1">
+                <div class="card-body">
+                  <h5 class="card-title">Projeto 2</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">NFT Card Component</h6>
+                  <p class="card-text">Aplicação web que apresenta um componente "Card NFT" ficando o mais próximo possível do modelo proposto no desafio proposto pelo FrontEnd Mentor.</p>
+                  <p class="card-text mb-2"><small class="text-muted">Tecnologias utilizadas</small></p>
+                  <img class="tech-logo" data-bs-toggle="modal" data-bs-target="#techModal" data-bs-tech="html5" src="/assets/img/html5logo.svg" alt="logo html5">
+                  <img class="tech-logo" data-bs-toggle="modal" data-bs-target="#techModal" data-bs-tech="css3" src="/assets/img/css3logo.svg" alt="logo css3">                    
                 </div>
-              </div>
-              <div class="row">
-                <div class="card-group mb-4">
-                  <div class="card text-center border-dark" style="width: 18rem">
-                    <div class="card-body">
-                      <h5 class="card-title">Digital Innovation One Inc.</h5>
-                      <p class="card-text mb-2">Bootcamp HTML Web Developer</p>
-                      <a
-                        href="https://www.dio.me/certificate/7F2A5199/"
-                        target="_blank"
-                        class="card-link"
-                        >Certificado</a
-                      >
-                    </div>
-                  </div>
-                  <div class="card text-center border-dark" style="width: 18rem">
-                    <div class="card-body">
-                      <h5 class="card-title">Digital Innovation One Inc.</h5>
-                      <p class="card-text mb-2">
-                        Bootcamp Take Blip Web Developer
-                      </p>
-                      <a
-                        href="https://www.dio.me/certificate/7F2A5199/"
-                        target="_blank"
-                        class="card-link"
-                        >Certificado</a
-                      >
-                    </div>
-                  </div>
+                <div class="card-footer d-inline-flex justify-content-between">
+                  <a href="https://kermitcosta.github.io/nft-preview-card-component-main/" target="_blank" class="card-link">Link</a>
+                  <a href="https://github.com/kermitcosta/nft-preview-card-component-main" target="_blank" class="card-link">Repositório</a>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-  
-        <!-- Experience Content -->
-        <section class="experience-content" >
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <h2 id="experience" class="experience-title">Atuação Profissional</h2>
-              </div>
-            </div>
-  
-            <div class="row reveal">
-              <div class="row">
-                <div class="col-12">
-                  <h4>Experiência</h4>
+
+            <div class="col">
+              <div class="card h-100">
+                <img class="card-img-top" src="./assets/img/demo-futflix.gif" alt="projeto1">
+                <div class="card-body">
+                  <h5 class="card-title">Projeto 3</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">FutFlix</h6>
+                  <p class="card-text">Aplicação criada a partir do Bootcamp HTML Web Developer da plataforma DIO, que tinha como objetivo replicar o posicionamento de elementos da página inicial do NetFlix.</p>
+                  <p class="card-text mb-2"><small class="text-muted">Tecnologias utilizadas</small></p>
+                  <img class="tech-logo" data-bs-toggle="modal" data-bs-target="#techModal" data-bs-tech="javaScript" src="/assets/img/javascriptlogo.svg" alt="logo javascript">
+                  <img class="tech-logo" data-bs-toggle="modal" data-bs-target="#techModal" data-bs-tech="html5" src="/assets/img/html5logo.svg" alt="logo html5">
+                  <img class="tech-logo" data-bs-toggle="modal" data-bs-target="#techModal" data-bs-tech="css3" src="/assets/img/css3logo.svg" alt="logo css3">                    
                 </div>
-              </div>
-              <div class="row">
-                <div class="card-group mb-4">
-  
-                  <div class="card text-center border-dark" style="width: 18rem">
-                    <div class="card-body">
-                      <h5 class="card-title">Agente Administrativo</h5>
-                      <h5 class="card-title">Prefeitura Municipal de João Pessoa</h5>
-                      <h6 class="card-subtitle mb-0 text-muted">
-                        Junho 2017 - Junho 2021
-                      </h6>
-                      <p class="card-text">
-                        <ul class="list-unstyled">
-                         <li class="list-group-item mb-1">Atividades exercidas</li> 
-                          <li>Gestão de frota</li>
-                          <li>Escala de funcionários</li>
-                          <li>Elaboração e organização de documentos</li>
-                          <li>Atendimento ao público</li>
-                        </ul>
-                      </p>
-                    </div>
-                  </div>
-                  
+                <div class="card-footer d-inline-flex justify-content-between">
+                  <a href="https://kermitcosta.github.io/clone-netflix/" target="_blank" class="card-link">Link</a>
+                  <a href="https://github.com/kermitcosta/clone-netflix" target="_blank" class="card-link">Repositório</a>
                 </div>
-              </div>
-            </div>
-  
-            <div class="row reveal">
-              <div class="row">
-                <div class="col-12">
-                  <h4>Outras atividades</h4>
-                </div>
-              </div>
-              <div class="row">
-                <div class="card-group mb-4">
-                  
-                  <div class="card text-center border-dark" style="width: 18rem">
-                    <div class="card-body">
-                      <h5 class="card-title">Voluntário</h5>
-                      <h5 class="card-title">Projeto de Extensão - Sala de Ações UFPB</h5>
-                      <h6 class="card-subtitle mb-0 text-muted">
-                        Junho 2021 - Abril 2022
-                      </h6>
-                      <p class="card-text">
-                        <ul class="list-unstyled">
-                          <li class="list-group-item mb-1">Atividades exercidas</li>
-                          <li >Análise Gráfica</li>
-                          <li>Produção de Relatórios</li>
-                          <li>Apresentações Semanais</li>
-                        </ul>
-                      </p>
-                    </div>
-                  </div>
-  
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-  
-        <!-- Contact Content-->
-        <section class="contact-content" >
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <h2 id="contact" class="contact-title">Contato</h2>
-              </div>
-            </div>
-  
-            <div class="row">
-              <div class="col-12 col-md-6 contact-links-col reveal">
-                <div class="row">
-                  <div class="col-12">
-                    <h4>Contato Pessoal</h4>
-                  </div>
-                </div>
-  
-                <div class="row">
-                  <div class="col-12">
-  
-                    <div class="row">
-                      <div class="col-12">
-                        <img src="./assets/img/envelope.svg" alt="envelope icon" />
-                        <a href="mailto:kermitcst@gmail.com">kermitcst@gmail.com</a>
-                      </div>
-                    </div>
-  
-                    <div class="row">
-                      <div class="col-12">
-                        <img src="./assets/img/whatsapp.svg" alt="whatsapp icon" />
-                        <a href="#" target="_blank"
-                        >(83) 99672-0111</a>
-                      </div>
-                    </div>
-  
-                  </div>
-                </div>
-  
-                <div class="row mt-5">
-                  <div class="col-12">
-                    <h4>Redes Sociais</h4>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="row">
-                      <div class="col">
-                        <img src="./assets/img/linkedin.svg" alt="envelope icon" />
-                        <a
-                          href="https://www.linkedin.com/in/kermit-costa/"
-                          target="_blank"
-                          >Linkedin</a
-                        >
-                      </div>
-                    </div>
-  
-                    <div class="row">
-                      <div class="col">
-                        <img src="./assets/img/github.svg" alt="whatsapp icon" />
-                        <a href="https://github.com/kermitcosta" target="_blank"
-                          >Github</a
-                        >
-                      </div>
-                    </div>
-                    
-                  </div>
-                  
-                  <div class="col-12 col-md-6">
-                    <div class="row">
-                      <div class="col">
-                        <img src="./assets/img/instagram.svg" alt="whatsapp icon" />
-                        <a href="https://www.instagram.com/kermitc" target="_blank"
-                        >Instagram</a>
-                      </div>
-                    </div>
-  
-                    <div class="row">
-                      <div class="col">
-                        <img src="./assets/img/twitter.svg" alt="whatsapp icon" />
-                        <a href="https://www.twitter.com/costakermit" target="_blank"
-                          >Twitter</a
-                        >
-                      </div>
-                    </div>
-  
-                  </div>
-  
-                </div>
-  
-              </div>
-  
-              <div class="col-12 col-md-6 contact-form-col">
-                <div class="row mt-5 mt-sm-0 mb-4">
-  
-                  <form class="reveal">
-                    <div class="form-floating mb-3">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="floatingInput"
-                        placeholder="Nome"
-                        required
-                      />
-                      <label for="floatingInput">Nome</label>
-                      <div id="emailHelp" class="form-text"></div>
-                    </div>
-                    <div class="form-floating mb-3">
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="floatingInput"
-                        placeholder="nome@example.com"
-                        required
-                      />
-                      <label for="floatingInput">Email</label>
-                    </div>
-                    <div class="form-floating">
-                      <textarea
-                        class="form-control"
-                        placeholder="Leave a comment here"
-                        id="floatingTextarea"
-                        required
-                        style="height: 150px"
-                      ></textarea>
-                      <label for="floatingTextarea">Mensagem</label>
-                    </div>
-                    <br />
-                    <button type="button" class="btn btn-primary">Enviar</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-  
-          </div>
-        </section>
-  
-        <!-- Content-Portfolio -->
-        <section id="portfolio">
-  
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <h2>Portfólio</h2>
               </div>
             </div>
             
-            <div class="row row-cols-1 row-cols-md-3 mb-5 g-4">
-
-              <div class="col">
-                <div class="card h-100">
-                  <img class="card-img-top" src="./assets/img/demo.gif" alt="projeto1">
-                  <div class="card-body">
-                    <h5 class="card-title">Projeto 1</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Desafio técnico DoutorMultas</h6>
-                    <p class="card-text">A aplicação exibe para o usuário fabricantes de veículos a partir de uma consulta API. Ao clicar em um determinado fabricante, uma nova página é aberta exibindo todos os veículos daquele fabricante. </p>
-                    <p class="card-text mb-2"><small class="text-muted">Tecnologias utilizadas</small></p>
-                    <img class="tech-logo" data-bs-toggle="modal" data-bs-target="#techModal" data-bs-tech="javaScript" src="/assets/img/javascriptlogo.svg" alt="logo javascript">
-                    <img class="tech-logo" data-bs-toggle="modal" data-bs-target="#techModal" data-bs-tech="html5" src="/assets/img/html5logo.svg" alt="logo html5">
-                    <img class="tech-logo" data-bs-toggle="modal" data-bs-target="#techModal" data-bs-tech="css3" src="/assets/img/css3logo.svg" alt="logo css3">
-                    <img class="tech-logo" data-bs-toggle="modal" data-bs-target="#techModal" data-bs-tech="bootStrap" src="/assets/img/bootstraplogo.svg" alt="loggo bootstrap">
-                  </div>
-                  <div class="card-footer d-inline-flex justify-content-between">
-                    <a href="https://kermitcosta.github.io/desafio-tecnico-drmultas/" target="_blank" class="card-link">Link</a>
-                    <a href="https://github.com/kermitcosta/desafio-tecnico-drmultas" target="_blank" class="card-link">Repositório</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col">
-                <div class="card h-100">
-                  <img class="card-img-top" src="./assets/img/demo.gif" alt="projeto1">
-                  <div class="card-body">
-                    <h5 class="card-title">Projeto 2</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde temporibus quasi distinctio itaque commodi. Obcaecati, distinctio eos, pariatur repellat placeat, hic provident nulla tenetur commodi nesciunt est iure animi dolor.</p>
-                    <p class="card-text mb-2"><small class="text-muted">Tecnologias utilizadas</small></p>
-                    <img class="tech-logo" data-bs-toggle="modal" data-bs-target="#techModal" data-bs-tech="html5" src="/assets/img/html5logo.svg" alt="">
-                    <img class="tech-logo" data-bs-toggle="modal" data-bs-target="#techModal" data-bs-tech="css3" src="/assets/img/css3logo.svg" alt="logo css3">                    
-                  </div>
-                  <div class="card-footer d-inline-flex justify-content-between">
-                    <a href="" class="card-link">Link</a>
-                    <a href="" class="card-link">Repositório</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col">
-                <div class="card h-100">
-                  <img class="card-img-top" src="./assets/img/demo.gif" alt="projeto1">
-                  <div class="card-body">
-                    <h5 class="card-title">Projeto 3</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde temporibus quasi distinctio itaque commodi. Obcaecati, distinctio eos, pariatur repellat placeat, hic provident nulla tenetur commodi nesciunt est iure animi dolor.</p>
-                    <p class="card-text mb-2"><small class="text-muted">Tecnologias utilizadas</small></p>
-                    <img class="tech-logo" data-bs-toggle="modal" data-bs-target="#techModal" data-bs-tech="html5" src="/assets/img/html5logo.svg" alt="">
-                    <img class="tech-logo" data-bs-toggle="modal" data-bs-target="#techModal" data-bs-tech="css3" src="/assets/img/css3logo.svg" alt="logo css3">                    
-                  </div>
-                  <div class="card-footer d-inline-flex justify-content-between">
-                    <a href="" class="card-link">Link</a>
-                    <a href="" class="card-link">Repositório</a>
-                  </div>
-                </div>
-              </div>
-              
-            </div>
-
           </div>
-          
-        </section>
-      </main>
 
-      <div class="modal fade" id="techModal" tabindex="-1" aria-labelledby="techName" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-fullscreen-md-down modal-dialog-scrollable">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="techName">Modal title</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="container-fluid">
-
-                <div class="row">
-                  <div class="col">
-                    <h5>Definição da Tecnologia</h5>
-                  </div>
-                </div>
-                
-                <div class="row">
-                  <div class="col">
-                    <p id="techDefinition">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim modi veritatis distinctio ipsam id quisquam fugit et aspernatur vel quae iure corrupti maxime nemo suscipit provident hic quaerat, placeat ratione.</p>
-                  </div>
-                </div>
-                  
-                <div class="row">
-                  <div class="col-6">
-                    <h5>Prós</h5>
-                    <p id="techPros">um, dois, três</p>
-                  </div>
-                  <div class="col-6">
-                    <h5>Cons</h5>
-                    <p id="techCons">um, dois, três</p>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col">
-                    <h5>Projetos que utilizama tech</h5>
-                    <p id="techProjects">1,2,3,4,5,6</p>
-                  </div>
-                </div>
-                
-                <div class="row">
-                  <div class="col">
-                    <iframe class="tech-video" height="auto" width="auto" src="https://www.youtube.com/embed/4dQtz1PpY9A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
-                </div>
-
+        </div>
+        
+        <div class="modal fade" id="techModal" tabindex="-1" aria-labelledby="techName" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-fullscreen-md-down modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="techName">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
+              <div class="modal-body">
+                <div class="container-fluid">
+  
+                  <div class="row">
+                    <div class="col">
+                      <h5>Definição da Tecnologia</h5>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="col">
+                      <p id="techDefinition"></p>
+                    </div>
+                  </div>
+                    
+                  <div class="row">
+                    <div class="col">
+                      <h5>Prós</h5>
+                      <p id="techPros"></p>
+                    </div>
+                  </div>
+                  <div class="row">
 
-            </div>
-            <div class="modal-footer">
-              <a id="techPage" href="" target="_blank">Site Oficial</a>
+                    <div class="col">
+                      <h5>Cons</h5>
+                      <p id="techCons"></p>
+                    </div>
+                  </div>
+  
+                  <div class="row">
+                    <div class="col">
+                      <h5>Projetos que utilizam a tecnologia</h5>
+                      <p id="techProjects"></p>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="col">
+                      <iframe id="techVideo" height="315" width="100%" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                  </div>
+  
+                </div>
+  
+              </div>
+              <div class="modal-footer">
+                <a id="techPage" href="" target="_blank">Site Oficial</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+        
+      </section>
+
+    </main>
 
     <!-- Footer -->
-    <footer>
-      <div class="social-links-wrapper">
-        <a href="https://github.com/kermitcosta" target="_blank"
-          ><img src="./assets/img/github.svg" alt="github icon"
-        /></a>
-        <a href="https://www.linkedin.com/in/kermit-costa/" target="_blank"
-          ><img src="./assets/img/linkedin.svg" alt="linkedin icon"
-        /></a>
-        <a href="https://www.instagram.com/kermitc" target="_blank"
-          ><img src="./assets/img/instagram.svg" alt="instagram icon"
-        /></a>
-        <a href="https://www.twitter.com/costakermit" target="_blank"
-          ><img src="./assets/img/twitter.svg" alt="twitter icon"
-        /></a>
+    <footer class="footer py-3 bg-light fixed-bottom box-shadow-above">
+      <div class="container text-center">
+        
+        <div class="row">
+          <div class="col">
+
+            <div class="row">
+              <div class="col">
+                <a href="https://github.com/kermitcosta" target="_blank"
+                  ><img src="./assets/img/github.svg" alt="github icon"
+                /></a>
+                <a href="https://www.linkedin.com/in/kermit-costa/" target="_blank"
+                  ><img src="./assets/img/linkedin.svg" alt="linkedin icon"
+                /></a>
+                <a href="https://www.instagram.com/kermitc" target="_blank"
+                  ><img src="./assets/img/instagram.svg" alt="instagram icon"
+                /></a>
+                <a href="https://www.twitter.com/costakermit" target="_blank"
+                  ><img src="./assets/img/twitter.svg" alt="twitter icon"
+                /></a>
+              </div>
+            </div>
+      
+            <div class="row py-2 d-inline-flex">
+              <div class="col">
+                <p class="footer-text">Desenvolvido por Kermit Costa</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
-      <p>Desenvolvido por Kermit Costa</p>
+      
     </footer>
-    
+
     <!-- Scripts -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -586,4 +608,5 @@
     ></script>
     <script src="./assets/js/index.js"></script>
   </body>
+
 </html>
