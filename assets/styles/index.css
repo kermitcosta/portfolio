@@ -99,7 +99,7 @@ ul {
 }
 
 :target {
-  scroll-margin-top: 3em;
+  scroll-margin-top: 4em;
 }
 
 /* == Menu == */
