@@ -6,8 +6,8 @@
     border-radius: 50%;
     display: block;
     margin: 0 auto;
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
   }
 
   .about-paragraph {
@@ -23,8 +23,8 @@
   }
 
   .about-img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
   }
 
   .about-paragraph {
