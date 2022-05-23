@@ -1,11 +1,12 @@
 /* == Custom Font == */
 
 @import url('https://fonts.googleapis.com/css2?family=Mali:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600&display=swap');
 
 /* == Reset & Global configs. == */
 * {
   border: none;
-  font-family: 'Mali', cursive;
+  font-family: 'Sarabun', sans-serif;
   margin: 0;
   outline: none;
   padding: 0;
@@ -16,6 +17,11 @@ a {
   color: #0d0b7d;
 }
 
+a:hover {
+  color: #0d0b7d;
+  text-decoration: underline 2px #12130f;
+}
+
 body {
   position: relative;
   height: 100%;
@@ -24,7 +30,7 @@ body {
 }
 
 footer {
-  height: 80px;
+  height: 100px;
 }
 
 html {
@@ -36,6 +42,11 @@ h2 {
   margin-bottom: 30px;
   color: #12130f;
   font-size: 2rem;
+  text-shadow: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc,
+    1px 2px 1px #eeeeee, 3px 2px 1px #cccccc, 2px 3px 1px #eeeeee,
+    4px 3px 1px #cccccc, 3px 4px 1px #eeeeee, 5px 4px 1px #cccccc,
+    4px 5px 1px #eeeeee, 6px 5px 1px #cccccc, 5px 6px 1px #eeeeee,
+    7px 6px 1px #cccccc;
 }
 
 h4 {
@@ -55,10 +66,6 @@ ul {
   list-style: none;
 }
 
-.content {
-  padding-bottom: 100px;
-}
-
 .btn-primary {
   color: #f2f2f2;
   background-color: #0d0b7d;
@@ -67,8 +74,12 @@ ul {
 
 .btn-primary:hover {
   color: #f2f2f2;
-  background-color: #0f0d96;
-  border-color: #0f0d96;
+  background-color: #12130f;
+  border-color: #12130f;
+}
+
+.box-shadow-complete {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
 }
 
 .box-shadow-below {
@@ -79,17 +90,28 @@ ul {
   box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.05), 0 -4px 8px 0 rgba(0, 0, 0, 0.05);
 }
 
+.content {
+  padding-bottom: 100px;
+}
+
 .highlight-text {
   color: #0d0b7d;
 }
 
-.navbar-toggler-icon {
-  background-image: url(/assets/img/menu.svg);
+:target {
+  scroll-margin-top: 3em;
 }
 
-.footer-text {
-  border-top: 0.25px solid #0d0b7d;
-  width: fit-content;
+/* == Menu == */
+.logo {
+  color: #f2f2f2;
+  background-color: #0d0b7d;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.navbar-toggler-icon {
+  background-image: url(/assets/img/menu.svg);
 }
 
 .nav-link {
@@ -100,30 +122,12 @@ ul {
   color: #0d0b7d;
 }
 
-.tech-logo {
-  background-color: #0d0b7d;
-  border-radius: 2rem;
-  padding: 0.25rem;
-  cursor: pointer;
-}
-
-.tech-logo:hover {
-  background-color: #0f0d96;
-}
-
 .active {
   color: #0d0b7d;
   text-decoration: underline 2px #12130f;
 }
 
-:target {
-  scroll-margin-top: 3em;
-}
-
-/* == Main Content == */
-
 /* == Home == */
-
 .home-img {
   padding: 30px 0px;
   margin: auto;
@@ -133,13 +137,11 @@ ul {
 }
 
 /* == About Me == */
-
 .about-img {
   display: none;
 }
 
 /* == Qualification == */
-
 .qualification-content a {
   color: #0d0b7d;
 }
@@ -155,3 +157,23 @@ ul {
 /* == Professional Experience == */
 
 /* == Contact == */
+
+/* == Portfolio == */
+.tech-logo {
+  background-color: #0d0b7d;
+  border-radius: 2rem;
+  padding: 0.25rem;
+  cursor: pointer;
+}
+
+.logo:hover,
+.tech-logo:hover {
+  background-color: #12130f;
+  text-decoration: none;
+}
+
+/* == Footer == */
+.footer-text {
+  border-top: 0.25px solid #0d0b7d;
+  width: fit-content;
+}
