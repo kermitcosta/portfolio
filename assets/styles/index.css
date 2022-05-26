@@ -93,6 +93,10 @@ ul {
   color: #0d0b7d;
 }
 
+.invisible {
+  display: none;
+}
+
 :target {
   scroll-margin-top: 4em;
 }

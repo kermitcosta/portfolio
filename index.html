@@ -390,9 +390,10 @@
                   <div class="form-floating mb-3">
                     <input
                       type="text"
-                      class="form-control"
+                      class="form-control form-name"
                       id="floatingInput"
                       placeholder="Nome"
+                      name="user-name"
                       required
                     />
                     <label for="floatingInput">Nome</label>
@@ -401,84 +402,46 @@
                   <div class="form-floating mb-3">
                     <input
                       type="email"
-                      class="form-control"
+                      class="form-control form-email"
                       id="floatingInput"
                       placeholder="nome@example.com"
+                      name="user-email"
                       required
                     />
                     <label for="floatingInput">Email</label>
                   </div>
                   <div class="form-floating">
                     <textarea
-                      class="form-control"
+                      class="form-control form-message"
                       placeholder="Leave a comment here"
                       id="floatingTextarea"
+                      name="user-message"
                       required
                       style="height: 150px"
                     ></textarea>
                     <label for="floatingTextarea">Mensagem</label>
                   </div>
                   <br />
-                  <button type="button" class="btn btn-primary">Enviar</button>
+                  <button id="form-button" type="button" class="btn btn-primary">Enviar</button>
                 </form>
               </div>
             </div>
           </div>
 
-          <div class="row">
+          <!-- Comment section -->
+          <div id="comment-section" class="row invisible">
 
             <div class="col">
               <h4>Comentários</h4>
             </div>
 
-            <div class="row row-cols-1 row-cols-md-3 g-4 mt-0 mb-3">
-              
-              <div class="col">
-                <div class="card border-light box-shadow-complete">
-                  <div class="card-body">
-                    <h5 class="card-title">Nome</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    <p class="card-text"><small class="text-muted">email@email.com</small></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col">
-                <div class="card border-light box-shadow-complete">
-                  <div class="card-body">
-                    <h5 class="card-title">Nome</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    <p class="card-text"><small class="text-muted">email@email.com</small></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col">
-                <div class="card border-light box-shadow-complete">
-                  <div class="card-body">
-                    <h5 class="card-title">Nome</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    <p class="card-text"><small class="text-muted">email@email.com</small></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col">
-                <div class="card border-light box-shadow-complete">
-                  <div class="card-body">
-                    <h5 class="card-title">Nome</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    <p class="card-text"><small class="text-muted">email@email.com</small></p>
-                  </div>
-                </div>
-              </div>           
-              
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-0 mb-3 main-comment">
+                        
             </div>
 
             <div class="col d-inline-flex justify-content-center">
               <button type="button" class="btn btn-primary">Limpar Comentários</button>
             </div>
-
           </div>
 
         </div>
@@ -665,6 +628,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/form.js"></script>
+    <script src="./assets/js/comment-render.js"></script>
   </body>
 
 </html>
