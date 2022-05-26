@@ -105,8 +105,9 @@ ul {
   padding: 8px;
 }
 
-.navbar-toggler-icon {
-  background-image: url(./assets/img/menu.svg);
+.navbar-toggler-icon img {
+  height: 30px;
+  width: 30px;
 }
 
 .nav-link {
