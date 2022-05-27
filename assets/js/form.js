@@ -1,6 +1,17 @@
 const formButton = document.querySelector('#form-button')
 const pageComments = []
 
+function checkStorage() {
+  let loadedComments
+  if (localStorage.length > 0) {
+    loadedComments = JSON.parse(localStorage.getItem('comments'))
+    loadedComments.forEach(comment => {
+      pageComments.push(comment)
+    })
+    renderComment(pageComments)
+  }
+}
+
 formButton.addEventListener('click', function () {
   let form = document.querySelector('form')
   let formName = document.querySelector('.form-name').value
@@ -13,13 +24,14 @@ formButton.addEventListener('click', function () {
     message: formMessage
   }
 
-  let commentSection = document.querySelector('#comment-section')
-  commentSection.classList.remove('invisible')
+  if (formValidation(newComment)) {
+    pageComments.push(newComment)
+    localStorage.setItem('comments', JSON.stringify(pageComments))
 
-  pageComments.push(newComment)
-  // localStorage.setItem('Comentários', pageComments)
+    errorMessage.textContent = ''
 
-  renderComment(pageComments)
+    renderComment(pageComments)
 
-  form.reset()
+    form.reset()
+  }
 })

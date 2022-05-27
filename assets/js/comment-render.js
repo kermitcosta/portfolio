@@ -1,4 +1,7 @@
 function renderComment(pageComments) {
+  let commentSection = document.querySelector('#comment-section')
+  commentSection.classList.remove('invisible')
+
   let commentDiv = document.querySelector('.main-comment')
   commentDiv.innerHTML = ''
 

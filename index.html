@@ -22,7 +22,7 @@
     <title>Kermit Costa - Portfólio</title>
   </head>
 
-  <body data-bs-spy="scroll" data-bs-target="#pf-navbar" data-bs-offset="150">
+  <body onload="checkStorage()" data-bs-spy="scroll" data-bs-target="#pf-navbar" data-bs-offset="150">
     
     <!-- Menu -->
     <nav id="pf-navbar" class="navbar navbar-expand-md bg-light fixed-top box-shadow-below">
@@ -410,7 +410,7 @@
                     />
                     <label for="floatingInput">Email</label>
                   </div>
-                  <div class="form-floating">
+                  <div class="form-floating mb-1">
                     <textarea
                       class="form-control form-message"
                       placeholder="Leave a comment here"
@@ -421,7 +421,11 @@
                     ></textarea>
                     <label for="floatingTextarea">Mensagem</label>
                   </div>
-                  <br />
+                  <div class="row mb-2">
+                    <div class="col">
+                      <span class="error-message"></span>
+                    </div>
+                  </div>
                   <button id="form-button" type="button" class="btn btn-primary">Enviar</button>
                 </form>
               </div>
@@ -429,18 +433,18 @@
           </div>
 
           <!-- Comment section -->
-          <div id="comment-section" class="row invisible">
+          <div id="comment-section" class="row invisible reveal">
 
             <div class="col">
               <h4>Comentários</h4>
             </div>
 
-            <div class="row row-cols-1 row-cols-md-3 g-4 mt-0 mb-3 main-comment">
-                        
+            <div class="row row-cols-1 row-cols-md-4 g-4 mt-0 mb-4 main-comment">
+            
             </div>
 
             <div class="col d-inline-flex justify-content-center">
-              <button type="button" class="btn btn-primary">Limpar Comentários</button>
+              <button id="clear-button" type="button" class="btn btn-primary">Limpar Comentários</button>
             </div>
           </div>
 
@@ -630,6 +634,8 @@
     <script src="./assets/js/index.js"></script>
     <script src="./assets/js/form.js"></script>
     <script src="./assets/js/comment-render.js"></script>
+    <script src="./assets/js/comment-clear.js"></script>
+    <script src="./assets/js/form-validation.js"></script>
   </body>
 
 </html>
