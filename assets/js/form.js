@@ -1,19 +1,8 @@
 const formButton = document.querySelector('#form-button')
 const pageComments = []
 
-function checkStorage() {
-  let loadedComments
-  if (localStorage.length > 0) {
-    loadedComments = JSON.parse(localStorage.getItem('comments'))
-    loadedComments.forEach(comment => {
-      pageComments.push(comment)
-    })
-    renderComment(pageComments)
-  }
-}
-
 formButton.addEventListener('click', function () {
-  let form = document.querySelector('form')
+  let form = document.querySelector('#comment-form')
   let formName = document.querySelector('.form-name').value
   let formEmail = document.querySelector('.form-email').value
   let formMessage = document.querySelector('.form-message').value

@@ -1,0 +1,155 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h2 class="contact-title">Contato</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12 col-md-6 contact-links-col reveal">
+      <div class="row">
+        <div class="col-12">
+          <h4>Contato Pessoal</h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12">
+              <img src="./assets/img/envelope.svg" alt="envelope icon" />
+              <a href="mailto:kermitcst@gmail.com">kermitcst@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <img src="./assets/img/whatsapp.svg" alt="whatsapp icon" />
+              <a href="#" target="_blank">(83) 99672-0111</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-12">
+          <h4>Redes Sociais</h4>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="row">
+            <div class="col">
+              <img src="./assets/img/linkedin.svg" alt="envelope icon" />
+              <a
+                href="https://www.linkedin.com/in/kermit-costa/"
+                target="_blank"
+                >Linkedin</a
+              >
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <img src="./assets/img/github.svg" alt="whatsapp icon" />
+              <a href="https://github.com/kermitcosta" target="_blank"
+                >Github</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="row">
+            <div class="col">
+              <img src="./assets/img/instagram.svg" alt="whatsapp icon" />
+              <a href="https://www.instagram.com/kermitc" target="_blank"
+                >Instagram</a
+              >
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <img src="./assets/img/twitter.svg" alt="whatsapp icon" />
+              <a href="https://www.twitter.com/costakermit" target="_blank"
+                >Twitter</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 contact-form-col">
+      <div class="row mt-5 mt-sm-0 mb-4 reveal">
+        <div class="col-12 mb-1">
+          <h4>Deixe um comentário</h4>
+        </div>
+
+        <form id="comment-form">
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control form-name"
+              id="floatingInput"
+              placeholder="Nome"
+              name="user-name"
+              required
+            />
+            <label for="floatingInput">Nome</label>
+            <div id="emailHelp" class="form-text"></div>
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              type="email"
+              class="form-control form-email"
+              id="floatingInput"
+              placeholder="nome@example.com"
+              name="user-email"
+              required
+            />
+            <label for="floatingInput">Email</label>
+          </div>
+          <div class="form-floating mb-1">
+            <textarea
+              class="form-control form-message"
+              placeholder="Leave a comment here"
+              id="floatingTextarea"
+              name="user-message"
+              required
+              style="height: 150px"
+            ></textarea>
+            <label for="floatingTextarea">Mensagem</label>
+          </div>
+          <div class="row mb-2">
+            <div class="col">
+              <span class="error-message"></span>
+            </div>
+          </div>
+          <button id="form-button" type="button" class="btn btn-primary">
+            Enviar
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Comment section -->
+  <div id="comment-section" class="row invisible reveal">
+    <div class="col">
+      <h4>Comentários</h4>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-4 g-4 mt-0 mb-4 main-comment"></div>
+
+    <div class="col d-inline-flex justify-content-center">
+      <button id="clear-button" type="button" class="btn btn-primary">
+        Limpar Comentários
+      </button>
+    </div>
+  </div>
+</div>
+
+<script src="./assets/js/form.js"></script>
+<script src="./assets/js/comment-clear.js"></script>
+<script src="./assets/js/comment-render.js"></script>
+<script src="./assets/js/form-validation.js"></script>

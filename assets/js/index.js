@@ -1,15 +1,26 @@
 //Get GitHub Profile Picture
-function getGitHubProfilePicture() {
-  const url = 'https://api.github.com/users/kermitcosta'
+// function getGitHubProfilePicture() {
+//   const url = 'https://api.github.com/users/kermitcosta'
 
-  fetch(url)
-    .then(response => response.json())
-    .then(data => {
-      userPicture.src = data.avatar_url
+//   fetch(url)
+//     .then(response => response.json())
+//     .then(data => {
+//       userPicture.src = data.avatar_url
+//     })
+// }
+
+// getGitHubProfilePicture()
+
+function checkStorage() {
+  let loadedComments
+  if (localStorage.length > 0) {
+    loadedComments = JSON.parse(localStorage.getItem('comments'))
+    loadedComments.forEach(comment => {
+      pageComments.push(comment)
     })
+    renderComment(pageComments)
+  }
 }
-
-getGitHubProfilePicture()
 
 //Reveal effect
 window.addEventListener('scroll', reveal)
