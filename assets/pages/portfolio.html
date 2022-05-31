@@ -184,3 +184,82 @@
     </div>
   </div>
 </div>
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="techModal"
+  tabindex="-1"
+  aria-labelledby="techName"
+  aria-hidden="true"
+>
+  <div
+    class="modal-dialog modal-lg modal-fullscreen-md-down modal-dialog-scrollable"
+  >
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="techName">Modal title</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid gy-md-5">
+          <div class="row">
+            <div class="col">
+              <h5>Definição da Tecnologia</h5>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <p id="techDefinition"></p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <h5>Prós</h5>
+              <p id="techPros"></p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <h5>Limitações</h5>
+              <p id="techCons"></p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <h5>Projetos que utilizam a tecnologia</h5>
+              <p id="techProjects"></p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <iframe
+                id="techVideo"
+                height="315"
+                width="100%"
+                src=""
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a id="techPage" href="" target="_blank">Site Oficial</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="./assets/js/portfolio.js"></script>
