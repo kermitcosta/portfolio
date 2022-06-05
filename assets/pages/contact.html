@@ -93,6 +93,7 @@
               id="floatingInput"
               placeholder="Nome"
               name="user-name"
+              maxlength="20"
               required
             />
             <label for="floatingInput">Nome</label>
@@ -115,10 +116,15 @@
               placeholder="Leave a comment here"
               id="floatingTextarea"
               name="user-message"
+              maxlength="200"
               required
-              style="height: 150px"
+              style="height: 120px"
             ></textarea>
             <label for="floatingTextarea">Mensagem</label>
+            <small class="text-muted">
+              <span class="position-absolute bottom-0 end-0" id="count_message">
+              </span>
+            </small>
           </div>
           <div class="row mb-2">
             <div class="col">

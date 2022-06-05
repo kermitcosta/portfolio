@@ -36,3 +36,13 @@ formButton.addEventListener('click', function () {
     form.reset()
   }
 })
+
+//character counter
+const text_max = 200
+$('#count_message').html('0 / ' + text_max)
+
+$('#floatingTextarea').keyup(function () {
+  var text_length = $('#floatingTextarea').val().length
+
+  $('#count_message').html(text_length + ' / ' + text_max)
+})
